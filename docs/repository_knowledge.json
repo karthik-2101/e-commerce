@@ -1,0 +1,4179 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-07-31T14:19:14.834738+00:00",
+  "metadata": {
+    "name": "e-commerce",
+    "root_path": "/home/runner/work/e-commerce/e-commerce",
+    "is_git_repo": true,
+    "remote_url": "https://github.com/karthik-2101/e-commerce",
+    "default_branch": "main",
+    "current_branch": "main",
+    "latest_commit": {
+      "sha": "05b5e82dd7893c1ee69dcf6542e8766e03e1fa18",
+      "short_sha": "05b5e82",
+      "message": "Changing to tab spaces",
+      "author": "karthik-2101",
+      "email": "karthik.e@mitrahsoft.in",
+      "date": "2026-07-31T19:48:29+05:30"
+    },
+    "tags": []
+  },
+  "statistics": {
+    "total_files": 34,
+    "total_size_bytes": 1830756,
+    "total_directories": 7,
+    "files_by_category": {
+      "ci_cd": 1,
+      "configuration": 2,
+      "other": 2,
+      "source_code": 20,
+      "documentation": 5,
+      "asset": 4
+    },
+    "language_count": 1,
+    "framework_count": 3,
+    "dependency_count": 8,
+    "primary_language": "Python"
+  },
+  "languages": [
+    {
+      "language": "Python",
+      "files": 20,
+      "bytes": 35141,
+      "percentage": 100.0
+    }
+  ],
+  "frameworks": [
+    {
+      "name": "FastAPI",
+      "category": "backend",
+      "language": "Python",
+      "confidence": 0.9,
+      "evidence": [
+        "dependency 'fastapi'",
+        "import 'fastapi'"
+      ]
+    },
+    {
+      "name": "SQLAlchemy",
+      "category": "orm",
+      "language": "Python",
+      "confidence": 0.9,
+      "evidence": [
+        "dependency 'sqlalchemy'",
+        "import 'sqlalchemy'"
+      ]
+    },
+    {
+      "name": "Starlette",
+      "category": "backend",
+      "language": "Python",
+      "confidence": 0.8,
+      "evidence": [
+        "import 'starlette'"
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "fastapi",
+      "version": "",
+      "scope": "production",
+      "manager": "pip",
+      "source_file": "requirement.txt"
+    },
+    {
+      "name": "uvicorn",
+      "version": "",
+      "scope": "production",
+      "manager": "pip",
+      "source_file": "requirement.txt"
+    },
+    {
+      "name": "psycopg2",
+      "version": "",
+      "scope": "production",
+      "manager": "pip",
+      "source_file": "requirement.txt"
+    },
+    {
+      "name": "sqlalchemy",
+      "version": "",
+      "scope": "production",
+      "manager": "pip",
+      "source_file": "requirement.txt"
+    },
+    {
+      "name": "pydantic",
+      "version": "",
+      "scope": "production",
+      "manager": "pip",
+      "source_file": "requirement.txt"
+    },
+    {
+      "name": "alembic",
+      "version": "",
+      "scope": "production",
+      "manager": "pip",
+      "source_file": "requirement.txt"
+    },
+    {
+      "name": "python-multipart",
+      "version": "",
+      "scope": "production",
+      "manager": "pip",
+      "source_file": "requirement.txt"
+    },
+    {
+      "name": "python-jose",
+      "version": "",
+      "scope": "production",
+      "manager": "pip",
+      "source_file": "requirement.txt"
+    }
+  ],
+  "configurations": [
+    {
+      "kind": "ci",
+      "path": ".github/workflows/repository-docs.yml",
+      "metadata": {
+        "provider": "github_actions"
+      }
+    }
+  ],
+  "environment_variables": [],
+  "build_tools": [],
+  "deployment": {
+    "containerized": false,
+    "orchestration": [],
+    "iac": []
+  },
+  "ci_cd": {
+    "providers": [
+      "GitHub Actions"
+    ]
+  },
+  "structure": {
+    "pattern": "Layered Architecture",
+    "confidence": 0.25,
+    "evidence": [
+      "found 'models'",
+      "found 'routers'",
+      "found 'database'"
+    ],
+    "top_level_dirs": [
+      ".github",
+      "alembic",
+      "app",
+      "description",
+      "images"
+    ],
+    "candidates": {
+      "Layered Architecture": 0.25
+    }
+  },
+  "directory_tree": {
+    ".github": {
+      "workflows": {
+        "__files__": [
+          "repository-docs.yml"
+        ]
+      }
+    },
+    "__files__": [
+      ".gitignore",
+      "alembic.ini",
+      "main.py",
+      "requirement.txt"
+    ],
+    "alembic": {
+      "__files__": [
+        "README",
+        "env.py",
+        "script.py.mako"
+      ],
+      "versions": {
+        "__files__": [
+          "1393308445ca_tables_created.py",
+          "222528c90341_tables_created.py",
+          "283235d34326_columns_added.py",
+          "3006ac59f891_column_added.py",
+          "3097f8991010_constraint_changed.py",
+          "34ba9630b2dd_columns_added.py",
+          "898fb4c0d6a9_columns_added.py",
+          "9271bb9320b8_table_created.py",
+          "b13b6c3b20cf_column_added.py",
+          "c3ba362c8cf5_column_removed.py",
+          "c87846d855fe_columns_added.py",
+          "cdcbc5bc00c6_column_added.py",
+          "d63cff9e26c2_tables_created.py"
+        ]
+      }
+    },
+    "app": {
+      "__files__": [
+        "database.py",
+        "models.py",
+        "routers.py",
+        "schema.py",
+        "utils.py"
+      ]
+    },
+    "description": {
+      "__files__": [
+        "1_Wireless Bluetooth Headphones.txt",
+        "2_T-Shirt.txt",
+        "3_Chair.txt",
+        "4_Mobile.txt"
+      ]
+    },
+    "images": {
+      "__files__": [
+        "1_bluetooth_headphone.jpg",
+        "2_t-shirt.jpg",
+        "3_chair.jpg",
+        "4_mobile.jpg"
+      ]
+    }
+  },
+  "documentation": [
+    "description/1_Wireless Bluetooth Headphones.txt",
+    "description/2_T-Shirt.txt",
+    "description/3_Chair.txt",
+    "description/4_Mobile.txt",
+    "requirement.txt"
+  ],
+  "extensions": {
+    "imports": {
+      "total_imports": 87,
+      "external_packages": [
+        "datetime",
+        "fastapi",
+        "jose",
+        "logging",
+        "os",
+        "passlib",
+        "pydantic",
+        "shutil",
+        "sqlalchemy",
+        "starlette",
+        "typing",
+        "uuid",
+        "uvicorn"
+      ],
+      "internal_modules": [
+        "alembic.env",
+        "alembic.versions.1393308445ca_tables_created",
+        "alembic.versions.222528c90341_tables_created",
+        "alembic.versions.283235d34326_columns_added",
+        "alembic.versions.3006ac59f891_column_added",
+        "alembic.versions.3097f8991010_constraint_changed",
+        "alembic.versions.34ba9630b2dd_columns_added",
+        "alembic.versions.898fb4c0d6a9_columns_added",
+        "alembic.versions.9271bb9320b8_table_created",
+        "alembic.versions.b13b6c3b20cf_column_added",
+        "alembic.versions.c3ba362c8cf5_column_removed",
+        "alembic.versions.c87846d855fe_columns_added",
+        "alembic.versions.cdcbc5bc00c6_column_added",
+        "alembic.versions.d63cff9e26c2_tables_created",
+        "app.database",
+        "app.models",
+        "app.routers",
+        "app.schema",
+        "app.utils",
+        "main"
+      ],
+      "modules": [
+        {
+          "path": "alembic/env.py",
+          "module": "alembic.env",
+          "imports": [
+            {
+              "module": "logging.config",
+              "names": [
+                "fileConfig"
+              ],
+              "alias": null,
+              "is_from": true,
+              "level": 0,
+              "lineno": 1,
+              "resolved": "logging.config",
+              "internal": false
+            },
+            {
+              "module": "sqlalchemy",
+              "names": [
+                "engine_from_config"
+              ],
+              "alias": null,
+              "is_from": true,
+              "level": 0,
+              "lineno": 3,
+              "resolved": "sqlalchemy",
+              "internal": false
+            },
+            {
+              "module": "sqlalchemy",
+              "names": [
+                "pool"
+              ],
+              "alias": null,
+              "is_from": true,
+              "level": 0,
+              "lineno": 4,
+              "resolved": "sqlalchemy",
+              "internal": false
+            },
+            {
+              "module": "app.database",
+              "names": [
+                "Base"
+              ],
+              "alias": null,
+              "is_from": true,
+              "level": 0,
+              "lineno": 5,
+              "resolved": "app.database",
+              "internal": true
+            },
+            {
+              "module": "app.models",
+              "names": [
+                "*"
+              ],
+              "alias": null,
+              "is_from": true,
+              "level": 0,
+              "lineno": 6,
+              "resolved": "app.models",
+              "internal": true
+            },
+            {
+              "module": "alembic",
+              "names": [
+                "context"
+              ],
+              "alias": null,
+              "is_from": true,
+              "level": 0,
+              "lineno": 8,
+              "resolved": "alembic",
+              "internal": true
+            }
+          ]
+        },
+        {
+          "path": "alembic/versions/1393308445ca_tables_created.py",
+          "module": "alembic.versions.1393308445ca_tables_created",
+          "imports": [
+            {
+              "module": "typing",
+              "names": [
+                "Sequence",
+                "Union"
+              ],
+              "alias": null,
+              "is_from": true,
+              "level": 0,
+              "lineno": 8,
+              "resolved": "typing",
+              "internal": false
+            },
+            {
+              "module": "alembic",
+              "names": [
+                "op"
+              ],
+              "alias": null,
+              "is_from": true,
+              "level": 0,
+              "lineno": 10,
+              "resolved": "alembic",
+              "internal": true
+            },
+            {
+              "module": "sqlalchemy",
+              "names": [],
+              "alias": "sa",
+              "is_from": false,
+              "level": 0,
+              "lineno": 11,
+              "resolved": "sqlalchemy",
+              "internal": false
+            },
+            {
+              "module": "sqlalchemy.dialects",
+              "names": [
+                "postgresql"
+              ],
+              "alias": null,
+              "is_from": true,
+              "level": 0,
+              "lineno": 12,
+              "resolved": "sqlalchemy.dialects",
+              "internal": false
+            }
+          ]
+        },
+        {
+          "path": "alembic/versions/222528c90341_tables_created.py",
+          "module": "alembic.versions.222528c90341_tables_created",
+          "imports": [
+            {
+              "module": "typing",
+              "names": [
+                "Sequence",
+                "Union"
+              ],
+              "alias": null,
+              "is_from": true,
+              "level": 0,
+              "lineno": 8,
+              "resolved": "typing",
+              "internal": false
+            },
+            {
+              "module": "alembic",
+              "names": [
+                "op"
+              ],
+              "alias": null,
+              "is_from": true,
+              "level": 0,
+              "lineno": 10,
+              "resolved": "alembic",
+              "internal": true
+            },
+            {
+              "module": "sqlalchemy",
+              "names": [],
+              "alias": "sa",
+              "is_from": false,
+              "level": 0,
+              "lineno": 11,
+              "resolved": "sqlalchemy",
+              "internal": false
+            }
+          ]
+        },
+        {
+          "path": "alembic/versions/283235d34326_columns_added.py",
+          "module": "alembic.versions.283235d34326_columns_added",
+          "imports": [
+            {
+              "module": "typing",
+              "names": [
+                "Sequence",
+                "Union"
+              ],
+              "alias": null,
+              "is_from": true,
+              "level": 0,
+              "lineno": 8,
+              "resolved": "typing",
+              "internal": false
+            },
+            {
+              "module": "alembic",
+              "names": [
+                "op"
+              ],
+              "alias": null,
+              "is_from": true,
+              "level": 0,
+              "lineno": 10,
+              "resolved": "alembic",
+              "internal": true
+            },
+            {
+              "module": "sqlalchemy",
+              "names": [],
+              "alias": "sa",
+              "is_from": false,
+              "level": 0,
+              "lineno": 11,
+              "resolved": "sqlalchemy",
+              "internal": false
+            }
+          ]
+        },
+        {
+          "path": "alembic/versions/3006ac59f891_column_added.py",
+          "module": "alembic.versions.3006ac59f891_column_added",
+          "imports": [
+            {
+              "module": "typing",
+              "names": [
+                "Sequence",
+                "Union"
+              ],
+              "alias": null,
+              "is_from": true,
+              "level": 0,
+              "lineno": 8,
+              "resolved": "typing",
+              "internal": false
+            },
+            {
+              "module": "alembic",
+              "names": [
+                "op"
+              ],
+              "alias": null,
+              "is_from": true,
+              "level": 0,
+              "lineno": 10,
+              "resolved": "alembic",
+              "internal": true
+            },
+            {
+              "module": "sqlalchemy",
+              "names": [],
+              "alias": "sa",
+              "is_from": false,
+              "level": 0,
+              "lineno": 11,
+              "resolved": "sqlalchemy",
+              "internal": false
+            }
+          ]
+        },
+        {
+          "path": "alembic/versions/3097f8991010_constraint_changed.py",
+          "module": "alembic.versions.3097f8991010_constraint_changed",
+          "imports": [
+            {
+              "module": "typing",
+              "names": [
+                "Sequence",
+                "Union"
+              ],
+              "alias": null,
+              "is_from": true,
+              "level": 0,
+              "lineno": 8,
+              "resolved": "typing",
+              "internal": false
+            },
+            {
+              "module": "alembic",
+              "names": [
+                "op"
+              ],
+              "alias": null,
+              "is_from": true,
+              "level": 0,
+              "lineno": 10,
+              "resolved": "alembic",
+              "internal": true
+            },
+            {
+              "module": "sqlalchemy",
+              "names": [],
+              "alias": "sa",
+              "is_from": false,
+              "level": 0,
+              "lineno": 11,
+              "resolved": "sqlalchemy",
+              "internal": false
+            }
+          ]
+        },
+        {
+          "path": "alembic/versions/34ba9630b2dd_columns_added.py",
+          "module": "alembic.versions.34ba9630b2dd_columns_added",
+          "imports": [
+            {
+              "module": "typing",
+              "names": [
+                "Sequence",
+                "Union"
+              ],
+              "alias": null,
+              "is_from": true,
+              "level": 0,
+              "lineno": 8,
+              "resolved": "typing",
+              "internal": false
+            },
+            {
+              "module": "alembic",
+              "names": [
+                "op"
+              ],
+              "alias": null,
+              "is_from": true,
+              "level": 0,
+              "lineno": 10,
+              "resolved": "alembic",
+              "internal": true
+            },
+            {
+              "module": "sqlalchemy",
+              "names": [],
+              "alias": "sa",
+              "is_from": false,
+              "level": 0,
+              "lineno": 11,
+              "resolved": "sqlalchemy",
+              "internal": false
+            },
+            {
+              "module": "sqlalchemy.dialects",
+              "names": [
+                "postgresql"
+              ],
+              "alias": null,
+              "is_from": true,
+              "level": 0,
+              "lineno": 12,
+              "resolved": "sqlalchemy.dialects",
+              "internal": false
+            }
+          ]
+        },
+        {
+          "path": "alembic/versions/898fb4c0d6a9_columns_added.py",
+          "module": "alembic.versions.898fb4c0d6a9_columns_added",
+          "imports": [
+            {
+              "module": "typing",
+              "names": [
+                "Sequence",
+                "Union"
+              ],
+              "alias": null,
+              "is_from": true,
+              "level": 0,
+              "lineno": 8,
+              "resolved": "typing",
+              "internal": false
+            },
+            {
+              "module": "alembic",
+              "names": [
+                "op"
+              ],
+              "alias": null,
+              "is_from": true,
+              "level": 0,
+              "lineno": 10,
+              "resolved": "alembic",
+              "internal": true
+            },
+            {
+              "module": "sqlalchemy",
+              "names": [],
+              "alias": "sa",
+              "is_from": false,
+              "level": 0,
+              "lineno": 11,
+              "resolved": "sqlalchemy",
+              "internal": false
+            }
+          ]
+        },
+        {
+          "path": "alembic/versions/9271bb9320b8_table_created.py",
+          "module": "alembic.versions.9271bb9320b8_table_created",
+          "imports": [
+            {
+              "module": "typing",
+              "names": [
+                "Sequence",
+                "Union"
+              ],
+              "alias": null,
+              "is_from": true,
+              "level": 0,
+              "lineno": 8,
+              "resolved": "typing",
+              "internal": false
+            },
+            {
+              "module": "alembic",
+              "names": [
+                "op"
+              ],
+              "alias": null,
+              "is_from": true,
+              "level": 0,
+              "lineno": 10,
+              "resolved": "alembic",
+              "internal": true
+            },
+            {
+              "module": "sqlalchemy",
+              "names": [],
+              "alias": "sa",
+              "is_from": false,
+              "level": 0,
+              "lineno": 11,
+              "resolved": "sqlalchemy",
+              "internal": false
+            }
+          ]
+        },
+        {
+          "path": "alembic/versions/b13b6c3b20cf_column_added.py",
+          "module": "alembic.versions.b13b6c3b20cf_column_added",
+          "imports": [
+            {
+              "module": "typing",
+              "names": [
+                "Sequence",
+                "Union"
+              ],
+              "alias": null,
+              "is_from": true,
+              "level": 0,
+              "lineno": 8,
+              "resolved": "typing",
+              "internal": false
+            },
+            {
+              "module": "alembic",
+              "names": [
+                "op"
+              ],
+              "alias": null,
+              "is_from": true,
+              "level": 0,
+              "lineno": 10,
+              "resolved": "alembic",
+              "internal": true
+            },
+            {
+              "module": "sqlalchemy",
+              "names": [],
+              "alias": "sa",
+              "is_from": false,
+              "level": 0,
+              "lineno": 11,
+              "resolved": "sqlalchemy",
+              "internal": false
+            }
+          ]
+        },
+        {
+          "path": "alembic/versions/c3ba362c8cf5_column_removed.py",
+          "module": "alembic.versions.c3ba362c8cf5_column_removed",
+          "imports": [
+            {
+              "module": "typing",
+              "names": [
+                "Sequence",
+                "Union"
+              ],
+              "alias": null,
+              "is_from": true,
+              "level": 0,
+              "lineno": 8,
+              "resolved": "typing",
+              "internal": false
+            },
+            {
+              "module": "alembic",
+              "names": [
+                "op"
+              ],
+              "alias": null,
+              "is_from": true,
+              "level": 0,
+              "lineno": 10,
+              "resolved": "alembic",
+              "internal": true
+            },
+            {
+              "module": "sqlalchemy",
+              "names": [],
+              "alias": "sa",
+              "is_from": false,
+              "level": 0,
+              "lineno": 11,
+              "resolved": "sqlalchemy",
+              "internal": false
+            },
+            {
+              "module": "sqlalchemy.dialects",
+              "names": [
+                "postgresql"
+              ],
+              "alias": null,
+              "is_from": true,
+              "level": 0,
+              "lineno": 12,
+              "resolved": "sqlalchemy.dialects",
+              "internal": false
+            }
+          ]
+        },
+        {
+          "path": "alembic/versions/c87846d855fe_columns_added.py",
+          "module": "alembic.versions.c87846d855fe_columns_added",
+          "imports": [
+            {
+              "module": "typing",
+              "names": [
+                "Sequence",
+                "Union"
+              ],
+              "alias": null,
+              "is_from": true,
+              "level": 0,
+              "lineno": 8,
+              "resolved": "typing",
+              "internal": false
+            },
+            {
+              "module": "alembic",
+              "names": [
+                "op"
+              ],
+              "alias": null,
+              "is_from": true,
+              "level": 0,
+              "lineno": 10,
+              "resolved": "alembic",
+              "internal": true
+            },
+            {
+              "module": "sqlalchemy",
+              "names": [],
+              "alias": "sa",
+              "is_from": false,
+              "level": 0,
+              "lineno": 11,
+              "resolved": "sqlalchemy",
+              "internal": false
+            }
+          ]
+        },
+        {
+          "path": "alembic/versions/cdcbc5bc00c6_column_added.py",
+          "module": "alembic.versions.cdcbc5bc00c6_column_added",
+          "imports": [
+            {
+              "module": "typing",
+              "names": [
+                "Sequence",
+                "Union"
+              ],
+              "alias": null,
+              "is_from": true,
+              "level": 0,
+              "lineno": 8,
+              "resolved": "typing",
+              "internal": false
+            },
+            {
+              "module": "alembic",
+              "names": [
+                "op"
+              ],
+              "alias": null,
+              "is_from": true,
+              "level": 0,
+              "lineno": 10,
+              "resolved": "alembic",
+              "internal": true
+            },
+            {
+              "module": "sqlalchemy",
+              "names": [],
+              "alias": "sa",
+              "is_from": false,
+              "level": 0,
+              "lineno": 11,
+              "resolved": "sqlalchemy",
+              "internal": false
+            }
+          ]
+        },
+        {
+          "path": "alembic/versions/d63cff9e26c2_tables_created.py",
+          "module": "alembic.versions.d63cff9e26c2_tables_created",
+          "imports": [
+            {
+              "module": "typing",
+              "names": [
+                "Sequence",
+                "Union"
+              ],
+              "alias": null,
+              "is_from": true,
+              "level": 0,
+              "lineno": 8,
+              "resolved": "typing",
+              "internal": false
+            },
+            {
+              "module": "alembic",
+              "names": [
+                "op"
+              ],
+              "alias": null,
+              "is_from": true,
+              "level": 0,
+              "lineno": 10,
+              "resolved": "alembic",
+              "internal": true
+            },
+            {
+              "module": "sqlalchemy",
+              "names": [],
+              "alias": "sa",
+              "is_from": false,
+              "level": 0,
+              "lineno": 11,
+              "resolved": "sqlalchemy",
+              "internal": false
+            }
+          ]
+        },
+        {
+          "path": "app/database.py",
+          "module": "app.database",
+          "imports": [
+            {
+              "module": "sqlalchemy",
+              "names": [
+                "create_engine"
+              ],
+              "alias": null,
+              "is_from": true,
+              "level": 0,
+              "lineno": 1,
+              "resolved": "sqlalchemy",
+              "internal": false
+            },
+            {
+              "module": "sqlalchemy.ext.declarative",
+              "names": [
+                "declarative_base"
+              ],
+              "alias": null,
+              "is_from": true,
+              "level": 0,
+              "lineno": 2,
+              "resolved": "sqlalchemy.ext.declarative",
+              "internal": false
+            },
+            {
+              "module": "sqlalchemy.orm",
+              "names": [
+                "sessionmaker"
+              ],
+              "alias": null,
+              "is_from": true,
+              "level": 0,
+              "lineno": 3,
+              "resolved": "sqlalchemy.orm",
+              "internal": false
+            }
+          ]
+        },
+        {
+          "path": "app/models.py",
+          "module": "app.models",
+          "imports": [
+            {
+              "module": "sqlalchemy",
+              "names": [
+                "Column",
+                "Integer",
+                "String",
+                "Boolean",
+                "ForeignKey",
+                "DateTime",
+                "Float"
+              ],
+              "alias": null,
+              "is_from": true,
+              "level": 0,
+              "lineno": 1,
+              "resolved": "sqlalchemy",
+              "internal": false
+            },
+            {
+              "module": "app.database",
+              "names": [
+                "Base"
+              ],
+              "alias": null,
+              "is_from": true,
+              "level": 0,
+              "lineno": 2,
+              "resolved": "app.database",
+              "internal": true
+            },
+            {
+              "module": "datetime",
+              "names": [
+                "datetime",
+                "timedelta"
+              ],
+              "alias": null,
+              "is_from": true,
+              "level": 0,
+              "lineno": 3,
+              "resolved": "datetime",
+              "internal": false
+            }
+          ]
+        },
+        {
+          "path": "app/routers.py",
+          "module": "app.routers",
+          "imports": [
+            {
+              "module": "fastapi",
+              "names": [
+                "APIRouter",
+                "Depends",
+                "Form",
+                "UploadFile",
+                "File",
+                "Request",
+                "status"
+              ],
+              "alias": null,
+              "is_from": true,
+              "level": 0,
+              "lineno": 1,
+              "resolved": "fastapi",
+              "internal": false
+            },
+            {
+              "module": "fastapi.responses",
+              "names": [
+                "JSONResponse"
+              ],
+              "alias": null,
+              "is_from": true,
+              "level": 0,
+              "lineno": 2,
+              "resolved": "fastapi.responses",
+              "internal": false
+            },
+            {
+              "module": "app.schema",
+              "names": [
+                "UserCreate",
+                "UserResponse",
+                "GetProductSchema"
+              ],
+              "alias": null,
+              "is_from": true,
+              "level": 0,
+              "lineno": 3,
+              "resolved": "app.schema",
+              "internal": true
+            },
+            {
+              "module": "app.database",
+              "names": [
+                "get_db"
+              ],
+              "alias": null,
+              "is_from": true,
+              "level": 0,
+              "lineno": 4,
+              "resolved": "app.database",
+              "internal": true
+            },
+            {
+              "module": "sqlalchemy.orm",
+              "names": [
+                "Session"
+              ],
+              "alias": null,
+              "is_from": true,
+              "level": 0,
+              "lineno": 5,
+              "resolved": "sqlalchemy.orm",
+              "internal": false
+            },
+            {
+              "module": "app.models",
+              "names": [
+                "User1",
+                "Product",
+                "Order",
+                "OrderItem"
+              ],
+              "alias": null,
+              "is_from": true,
+              "level": 0,
+              "lineno": 6,
+              "resolved": "app.models",
+              "internal": true
+            },
+            {
+              "module": "app.utils",
+              "names": [
+                "hash_password",
+                "verify_password",
+                "create_access_token",
+                "create_refresh_token",
+                "get_current_user",
+                "clear_cart",
+                "get_user"
+              ],
+              "alias": null,
+              "is_from": true,
+              "level": 0,
+              "lineno": 7,
+              "resolved": "app.utils",
+              "internal": true
+            },
+            {
+              "module": "pydantic",
+              "names": [
+                "EmailStr"
+              ],
+              "alias": null,
+              "is_from": true,
+              "level": 0,
+              "lineno": 8,
+              "resolved": "pydantic",
+              "internal": false
+            },
+            {
+              "module": "typing",
+              "names": [
+                "Dict"
+              ],
+              "alias": null,
+              "is_from": true,
+              "level": 0,
+              "lineno": 9,
+              "resolved": "typing",
+              "internal": false
+            },
+            {
+              "module": "fastapi.exceptions",
+              "names": [
+                "HTTPException"
+              ],
+              "alias": null,
+              "is_from": true,
+              "level": 0,
+              "lineno": 10,
+              "resolved": "fastapi.exceptions",
+              "internal": false
+            },
+            {
+              "module": "datetime",
+              "names": [
+                "datetime",
+                "timedelta"
+              ],
+              "alias": null,
+              "is_from": true,
+              "level": 0,
+              "lineno": 11,
+              "resolved": "datetime",
+              "internal": false
+            },
+            {
+              "module": "os",
+              "names": [],
+              "alias": null,
+              "is_from": false,
+              "level": 0,
+              "lineno": 12,
+              "resolved": "os",
+              "internal": false
+            },
+            {
+              "module": "shutil",
+              "names": [],
+              "alias": null,
+              "is_from": false,
+              "level": 0,
+              "lineno": 12,
+              "resolved": "shutil",
+              "internal": false
+            },
+            {
+              "module": "uuid",
+              "names": [],
+              "alias": null,
+              "is_from": false,
+              "level": 0,
+              "lineno": 12,
+              "resolved": "uuid",
+              "internal": false
+            }
+          ]
+        },
+        {
+          "path": "app/schema.py",
+          "module": "app.schema",
+          "imports": [
+            {
+              "module": "pydantic",
+              "names": [
+                "BaseModel",
+                "EmailStr"
+              ],
+              "alias": null,
+              "is_from": true,
+              "level": 0,
+              "lineno": 1,
+              "resolved": "pydantic",
+              "internal": false
+            },
+            {
+              "module": "datetime",
+              "names": [
+                "datetime"
+              ],
+              "alias": null,
+              "is_from": true,
+              "level": 0,
+              "lineno": 2,
+              "resolved": "datetime",
+              "internal": false
+            },
+            {
+              "module": "typing",
+              "names": [
+                "Optional"
+              ],
+              "alias": null,
+              "is_from": true,
+              "level": 0,
+              "lineno": 3,
+              "resolved": "typing",
+              "internal": false
+            }
+          ]
+        },
+        {
+          "path": "app/utils.py",
+          "module": "app.utils",
+          "imports": [
+            {
+              "module": "fastapi",
+              "names": [
+                "Depends",
+                "Request"
+              ],
+              "alias": null,
+              "is_from": true,
+              "level": 0,
+              "lineno": 1,
+              "resolved": "fastapi",
+              "internal": false
+            },
+            {
+              "module": "passlib.context",
+              "names": [
+                "CryptContext"
+              ],
+              "alias": null,
+              "is_from": true,
+              "level": 0,
+              "lineno": 2,
+              "resolved": "passlib.context",
+              "internal": false
+            },
+            {
+              "module": "datetime",
+              "names": [
+                "datetime",
+                "timedelta",
+                "timezone"
+              ],
+              "alias": null,
+              "is_from": true,
+              "level": 0,
+              "lineno": 3,
+              "resolved": "datetime",
+              "internal": false
+            },
+            {
+              "module": "typing",
+              "names": [
+                "Union",
+                "Any"
+              ],
+              "alias": null,
+              "is_from": true,
+              "level": 0,
+              "lineno": 4,
+              "resolved": "typing",
+              "internal": false
+            },
+            {
+              "module": "jose",
+              "names": [
+                "jwt",
+                "JWTError"
+              ],
+              "alias": null,
+              "is_from": true,
+              "level": 0,
+              "lineno": 5,
+              "resolved": "jose",
+              "internal": false
+            },
+            {
+              "module": "fastapi.security",
+              "names": [
+                "HTTPAuthorizationCredentials",
+                "HTTPBearer"
+              ],
+              "alias": null,
+              "is_from": true,
+              "level": 0,
+              "lineno": 6,
+              "resolved": "fastapi.security",
+              "internal": false
+            },
+            {
+              "module": "app.database",
+              "names": [
+                "get_db"
+              ],
+              "alias": null,
+              "is_from": true,
+              "level": 0,
+              "lineno": 7,
+              "resolved": "app.database",
+              "internal": true
+            },
+            {
+              "module": "sqlalchemy.orm",
+              "names": [
+                "Session"
+              ],
+              "alias": null,
+              "is_from": true,
+              "level": 0,
+              "lineno": 8,
+              "resolved": "sqlalchemy.orm",
+              "internal": false
+            },
+            {
+              "module": "app.models",
+              "names": [
+                "User1"
+              ],
+              "alias": null,
+              "is_from": true,
+              "level": 0,
+              "lineno": 9,
+              "resolved": "app.models",
+              "internal": true
+            },
+            {
+              "module": "fastapi.exceptions",
+              "names": [
+                "HTTPException"
+              ],
+              "alias": null,
+              "is_from": true,
+              "level": 0,
+              "lineno": 10,
+              "resolved": "fastapi.exceptions",
+              "internal": false
+            },
+            {
+              "module": "pydantic",
+              "names": [
+                "EmailStr"
+              ],
+              "alias": null,
+              "is_from": true,
+              "level": 0,
+              "lineno": 11,
+              "resolved": "pydantic",
+              "internal": false
+            }
+          ]
+        },
+        {
+          "path": "main.py",
+          "module": "main",
+          "imports": [
+            {
+              "module": "uvicorn",
+              "names": [],
+              "alias": null,
+              "is_from": false,
+              "level": 0,
+              "lineno": 1,
+              "resolved": "uvicorn",
+              "internal": false
+            },
+            {
+              "module": "fastapi",
+              "names": [
+                "FastAPI"
+              ],
+              "alias": null,
+              "is_from": true,
+              "level": 0,
+              "lineno": 2,
+              "resolved": "fastapi",
+              "internal": false
+            },
+            {
+              "module": "app.database",
+              "names": [
+                "Base",
+                "engine"
+              ],
+              "alias": null,
+              "is_from": true,
+              "level": 0,
+              "lineno": 3,
+              "resolved": "app.database",
+              "internal": true
+            },
+            {
+              "module": "app.routers",
+              "names": [
+                "router"
+              ],
+              "alias": null,
+              "is_from": true,
+              "level": 0,
+              "lineno": 4,
+              "resolved": "app.routers",
+              "internal": true
+            },
+            {
+              "module": "starlette.middleware.sessions",
+              "names": [
+                "SessionMiddleware"
+              ],
+              "alias": null,
+              "is_from": true,
+              "level": 0,
+              "lineno": 5,
+              "resolved": "starlette.middleware.sessions",
+              "internal": false
+            }
+          ]
+        }
+      ],
+      "module_dependencies": [
+        {
+          "from": "alembic.env",
+          "to": "alembic"
+        },
+        {
+          "from": "alembic.env",
+          "to": "app.database"
+        },
+        {
+          "from": "alembic.env",
+          "to": "app.models"
+        },
+        {
+          "from": "alembic.versions.1393308445ca_tables_created",
+          "to": "alembic"
+        },
+        {
+          "from": "alembic.versions.222528c90341_tables_created",
+          "to": "alembic"
+        },
+        {
+          "from": "alembic.versions.283235d34326_columns_added",
+          "to": "alembic"
+        },
+        {
+          "from": "alembic.versions.3006ac59f891_column_added",
+          "to": "alembic"
+        },
+        {
+          "from": "alembic.versions.3097f8991010_constraint_changed",
+          "to": "alembic"
+        },
+        {
+          "from": "alembic.versions.34ba9630b2dd_columns_added",
+          "to": "alembic"
+        },
+        {
+          "from": "alembic.versions.898fb4c0d6a9_columns_added",
+          "to": "alembic"
+        },
+        {
+          "from": "alembic.versions.9271bb9320b8_table_created",
+          "to": "alembic"
+        },
+        {
+          "from": "alembic.versions.b13b6c3b20cf_column_added",
+          "to": "alembic"
+        },
+        {
+          "from": "alembic.versions.c3ba362c8cf5_column_removed",
+          "to": "alembic"
+        },
+        {
+          "from": "alembic.versions.c87846d855fe_columns_added",
+          "to": "alembic"
+        },
+        {
+          "from": "alembic.versions.cdcbc5bc00c6_column_added",
+          "to": "alembic"
+        },
+        {
+          "from": "alembic.versions.d63cff9e26c2_tables_created",
+          "to": "alembic"
+        },
+        {
+          "from": "app.models",
+          "to": "app.database"
+        },
+        {
+          "from": "app.routers",
+          "to": "app.database"
+        },
+        {
+          "from": "app.routers",
+          "to": "app.models"
+        },
+        {
+          "from": "app.routers",
+          "to": "app.schema"
+        },
+        {
+          "from": "app.routers",
+          "to": "app.utils"
+        },
+        {
+          "from": "app.utils",
+          "to": "app.database"
+        },
+        {
+          "from": "app.utils",
+          "to": "app.models"
+        },
+        {
+          "from": "main",
+          "to": "app.database"
+        },
+        {
+          "from": "main",
+          "to": "app.routers"
+        }
+      ]
+    },
+    "functions": {
+      "total": 51,
+      "async_count": 15,
+      "functions": [
+        {
+          "path": "alembic/env.py",
+          "module": "alembic.env",
+          "name": "run_migrations_offline",
+          "qualified_name": "alembic.env.run_migrations_offline",
+          "signature": "def run_migrations_offline() -> None",
+          "is_async": false,
+          "return_type": "None",
+          "parameters": [],
+          "decorators": [],
+          "docstring": "Run migrations in 'offline' mode.\n\n    This configures the context with just a URL\n    and not an Engine, though an Engine is acceptable\n    here as well.  By skipping the Engine creation\n    we don't even need a DBAPI to be available.\n\n    Calls to context.execute() here emit the given string to the\n    script output.",
+          "lineno": 31
+        },
+        {
+          "path": "alembic/env.py",
+          "module": "alembic.env",
+          "name": "run_migrations_online",
+          "qualified_name": "alembic.env.run_migrations_online",
+          "signature": "def run_migrations_online() -> None",
+          "is_async": false,
+          "return_type": "None",
+          "parameters": [],
+          "decorators": [],
+          "docstring": "Run migrations in 'online' mode.\n\n    In this scenario we need to create an Engine\n    and associate a connection with the context.",
+          "lineno": 55
+        },
+        {
+          "path": "alembic/versions/1393308445ca_tables_created.py",
+          "module": "alembic.versions.1393308445ca_tables_created",
+          "name": "upgrade",
+          "qualified_name": "alembic.versions.1393308445ca_tables_created.upgrade",
+          "signature": "def upgrade() -> None",
+          "is_async": false,
+          "return_type": "None",
+          "parameters": [],
+          "decorators": [],
+          "docstring": "Upgrade schema.",
+          "lineno": 21
+        },
+        {
+          "path": "alembic/versions/1393308445ca_tables_created.py",
+          "module": "alembic.versions.1393308445ca_tables_created",
+          "name": "downgrade",
+          "qualified_name": "alembic.versions.1393308445ca_tables_created.downgrade",
+          "signature": "def downgrade() -> None",
+          "is_async": false,
+          "return_type": "None",
+          "parameters": [],
+          "decorators": [],
+          "docstring": "Downgrade schema.",
+          "lineno": 33
+        },
+        {
+          "path": "alembic/versions/222528c90341_tables_created.py",
+          "module": "alembic.versions.222528c90341_tables_created",
+          "name": "upgrade",
+          "qualified_name": "alembic.versions.222528c90341_tables_created.upgrade",
+          "signature": "def upgrade() -> None",
+          "is_async": false,
+          "return_type": "None",
+          "parameters": [],
+          "decorators": [],
+          "docstring": "Upgrade schema.",
+          "lineno": 21
+        },
+        {
+          "path": "alembic/versions/222528c90341_tables_created.py",
+          "module": "alembic.versions.222528c90341_tables_created",
+          "name": "downgrade",
+          "qualified_name": "alembic.versions.222528c90341_tables_created.downgrade",
+          "signature": "def downgrade() -> None",
+          "is_async": false,
+          "return_type": "None",
+          "parameters": [],
+          "decorators": [],
+          "docstring": "Downgrade schema.",
+          "lineno": 39
+        },
+        {
+          "path": "alembic/versions/283235d34326_columns_added.py",
+          "module": "alembic.versions.283235d34326_columns_added",
+          "name": "upgrade",
+          "qualified_name": "alembic.versions.283235d34326_columns_added.upgrade",
+          "signature": "def upgrade() -> None",
+          "is_async": false,
+          "return_type": "None",
+          "parameters": [],
+          "decorators": [],
+          "docstring": "Upgrade schema.",
+          "lineno": 21
+        },
+        {
+          "path": "alembic/versions/283235d34326_columns_added.py",
+          "module": "alembic.versions.283235d34326_columns_added",
+          "name": "downgrade",
+          "qualified_name": "alembic.versions.283235d34326_columns_added.downgrade",
+          "signature": "def downgrade() -> None",
+          "is_async": false,
+          "return_type": "None",
+          "parameters": [],
+          "decorators": [],
+          "docstring": "Downgrade schema.",
+          "lineno": 28
+        },
+        {
+          "path": "alembic/versions/3006ac59f891_column_added.py",
+          "module": "alembic.versions.3006ac59f891_column_added",
+          "name": "upgrade",
+          "qualified_name": "alembic.versions.3006ac59f891_column_added.upgrade",
+          "signature": "def upgrade() -> None",
+          "is_async": false,
+          "return_type": "None",
+          "parameters": [],
+          "decorators": [],
+          "docstring": "Upgrade schema.",
+          "lineno": 21
+        },
+        {
+          "path": "alembic/versions/3006ac59f891_column_added.py",
+          "module": "alembic.versions.3006ac59f891_column_added",
+          "name": "downgrade",
+          "qualified_name": "alembic.versions.3006ac59f891_column_added.downgrade",
+          "signature": "def downgrade() -> None",
+          "is_async": false,
+          "return_type": "None",
+          "parameters": [],
+          "decorators": [],
+          "docstring": "Downgrade schema.",
+          "lineno": 28
+        },
+        {
+          "path": "alembic/versions/3097f8991010_constraint_changed.py",
+          "module": "alembic.versions.3097f8991010_constraint_changed",
+          "name": "upgrade",
+          "qualified_name": "alembic.versions.3097f8991010_constraint_changed.upgrade",
+          "signature": "def upgrade() -> None",
+          "is_async": false,
+          "return_type": "None",
+          "parameters": [],
+          "decorators": [],
+          "docstring": "Upgrade schema.",
+          "lineno": 21
+        },
+        {
+          "path": "alembic/versions/3097f8991010_constraint_changed.py",
+          "module": "alembic.versions.3097f8991010_constraint_changed",
+          "name": "downgrade",
+          "qualified_name": "alembic.versions.3097f8991010_constraint_changed.downgrade",
+          "signature": "def downgrade() -> None",
+          "is_async": false,
+          "return_type": "None",
+          "parameters": [],
+          "decorators": [],
+          "docstring": "Downgrade schema.",
+          "lineno": 28
+        },
+        {
+          "path": "alembic/versions/34ba9630b2dd_columns_added.py",
+          "module": "alembic.versions.34ba9630b2dd_columns_added",
+          "name": "upgrade",
+          "qualified_name": "alembic.versions.34ba9630b2dd_columns_added.upgrade",
+          "signature": "def upgrade() -> None",
+          "is_async": false,
+          "return_type": "None",
+          "parameters": [],
+          "decorators": [],
+          "docstring": "Upgrade schema.",
+          "lineno": 21
+        },
+        {
+          "path": "alembic/versions/34ba9630b2dd_columns_added.py",
+          "module": "alembic.versions.34ba9630b2dd_columns_added",
+          "name": "downgrade",
+          "qualified_name": "alembic.versions.34ba9630b2dd_columns_added.downgrade",
+          "signature": "def downgrade() -> None",
+          "is_async": false,
+          "return_type": "None",
+          "parameters": [],
+          "decorators": [],
+          "docstring": "Downgrade schema.",
+          "lineno": 30
+        },
+        {
+          "path": "alembic/versions/898fb4c0d6a9_columns_added.py",
+          "module": "alembic.versions.898fb4c0d6a9_columns_added",
+          "name": "upgrade",
+          "qualified_name": "alembic.versions.898fb4c0d6a9_columns_added.upgrade",
+          "signature": "def upgrade() -> None",
+          "is_async": false,
+          "return_type": "None",
+          "parameters": [],
+          "decorators": [],
+          "docstring": "Upgrade schema.",
+          "lineno": 21
+        },
+        {
+          "path": "alembic/versions/898fb4c0d6a9_columns_added.py",
+          "module": "alembic.versions.898fb4c0d6a9_columns_added",
+          "name": "downgrade",
+          "qualified_name": "alembic.versions.898fb4c0d6a9_columns_added.downgrade",
+          "signature": "def downgrade() -> None",
+          "is_async": false,
+          "return_type": "None",
+          "parameters": [],
+          "decorators": [],
+          "docstring": "Downgrade schema.",
+          "lineno": 28
+        },
+        {
+          "path": "alembic/versions/9271bb9320b8_table_created.py",
+          "module": "alembic.versions.9271bb9320b8_table_created",
+          "name": "upgrade",
+          "qualified_name": "alembic.versions.9271bb9320b8_table_created.upgrade",
+          "signature": "def upgrade() -> None",
+          "is_async": false,
+          "return_type": "None",
+          "parameters": [],
+          "decorators": [],
+          "docstring": "Upgrade schema.",
+          "lineno": 21
+        },
+        {
+          "path": "alembic/versions/9271bb9320b8_table_created.py",
+          "module": "alembic.versions.9271bb9320b8_table_created",
+          "name": "downgrade",
+          "qualified_name": "alembic.versions.9271bb9320b8_table_created.downgrade",
+          "signature": "def downgrade() -> None",
+          "is_async": false,
+          "return_type": "None",
+          "parameters": [],
+          "decorators": [],
+          "docstring": "Downgrade schema.",
+          "lineno": 33
+        },
+        {
+          "path": "alembic/versions/b13b6c3b20cf_column_added.py",
+          "module": "alembic.versions.b13b6c3b20cf_column_added",
+          "name": "upgrade",
+          "qualified_name": "alembic.versions.b13b6c3b20cf_column_added.upgrade",
+          "signature": "def upgrade() -> None",
+          "is_async": false,
+          "return_type": "None",
+          "parameters": [],
+          "decorators": [],
+          "docstring": "Upgrade schema.",
+          "lineno": 21
+        },
+        {
+          "path": "alembic/versions/b13b6c3b20cf_column_added.py",
+          "module": "alembic.versions.b13b6c3b20cf_column_added",
+          "name": "downgrade",
+          "qualified_name": "alembic.versions.b13b6c3b20cf_column_added.downgrade",
+          "signature": "def downgrade() -> None",
+          "is_async": false,
+          "return_type": "None",
+          "parameters": [],
+          "decorators": [],
+          "docstring": "Downgrade schema.",
+          "lineno": 28
+        },
+        {
+          "path": "alembic/versions/c3ba362c8cf5_column_removed.py",
+          "module": "alembic.versions.c3ba362c8cf5_column_removed",
+          "name": "upgrade",
+          "qualified_name": "alembic.versions.c3ba362c8cf5_column_removed.upgrade",
+          "signature": "def upgrade() -> None",
+          "is_async": false,
+          "return_type": "None",
+          "parameters": [],
+          "decorators": [],
+          "docstring": "Upgrade schema.",
+          "lineno": 21
+        },
+        {
+          "path": "alembic/versions/c3ba362c8cf5_column_removed.py",
+          "module": "alembic.versions.c3ba362c8cf5_column_removed",
+          "name": "downgrade",
+          "qualified_name": "alembic.versions.c3ba362c8cf5_column_removed.downgrade",
+          "signature": "def downgrade() -> None",
+          "is_async": false,
+          "return_type": "None",
+          "parameters": [],
+          "decorators": [],
+          "docstring": "Downgrade schema.",
+          "lineno": 28
+        },
+        {
+          "path": "alembic/versions/c87846d855fe_columns_added.py",
+          "module": "alembic.versions.c87846d855fe_columns_added",
+          "name": "upgrade",
+          "qualified_name": "alembic.versions.c87846d855fe_columns_added.upgrade",
+          "signature": "def upgrade() -> None",
+          "is_async": false,
+          "return_type": "None",
+          "parameters": [],
+          "decorators": [],
+          "docstring": "Upgrade schema.",
+          "lineno": 21
+        },
+        {
+          "path": "alembic/versions/c87846d855fe_columns_added.py",
+          "module": "alembic.versions.c87846d855fe_columns_added",
+          "name": "downgrade",
+          "qualified_name": "alembic.versions.c87846d855fe_columns_added.downgrade",
+          "signature": "def downgrade() -> None",
+          "is_async": false,
+          "return_type": "None",
+          "parameters": [],
+          "decorators": [],
+          "docstring": "Downgrade schema.",
+          "lineno": 28
+        },
+        {
+          "path": "alembic/versions/cdcbc5bc00c6_column_added.py",
+          "module": "alembic.versions.cdcbc5bc00c6_column_added",
+          "name": "upgrade",
+          "qualified_name": "alembic.versions.cdcbc5bc00c6_column_added.upgrade",
+          "signature": "def upgrade() -> None",
+          "is_async": false,
+          "return_type": "None",
+          "parameters": [],
+          "decorators": [],
+          "docstring": "Upgrade schema.",
+          "lineno": 21
+        },
+        {
+          "path": "alembic/versions/cdcbc5bc00c6_column_added.py",
+          "module": "alembic.versions.cdcbc5bc00c6_column_added",
+          "name": "downgrade",
+          "qualified_name": "alembic.versions.cdcbc5bc00c6_column_added.downgrade",
+          "signature": "def downgrade() -> None",
+          "is_async": false,
+          "return_type": "None",
+          "parameters": [],
+          "decorators": [],
+          "docstring": "Downgrade schema.",
+          "lineno": 28
+        },
+        {
+          "path": "alembic/versions/d63cff9e26c2_tables_created.py",
+          "module": "alembic.versions.d63cff9e26c2_tables_created",
+          "name": "upgrade",
+          "qualified_name": "alembic.versions.d63cff9e26c2_tables_created.upgrade",
+          "signature": "def upgrade() -> None",
+          "is_async": false,
+          "return_type": "None",
+          "parameters": [],
+          "decorators": [],
+          "docstring": "Upgrade schema.",
+          "lineno": 21
+        },
+        {
+          "path": "alembic/versions/d63cff9e26c2_tables_created.py",
+          "module": "alembic.versions.d63cff9e26c2_tables_created",
+          "name": "downgrade",
+          "qualified_name": "alembic.versions.d63cff9e26c2_tables_created.downgrade",
+          "signature": "def downgrade() -> None",
+          "is_async": false,
+          "return_type": "None",
+          "parameters": [],
+          "decorators": [],
+          "docstring": "Downgrade schema.",
+          "lineno": 31
+        },
+        {
+          "path": "app/database.py",
+          "module": "app.database",
+          "name": "get_db",
+          "qualified_name": "app.database.get_db",
+          "signature": "def get_db()",
+          "is_async": false,
+          "return_type": null,
+          "parameters": [],
+          "decorators": [],
+          "docstring": null,
+          "lineno": 11
+        },
+        {
+          "path": "app/routers.py",
+          "module": "app.routers",
+          "name": "welcome",
+          "qualified_name": "app.routers.welcome",
+          "signature": "async def welcome()",
+          "is_async": true,
+          "return_type": null,
+          "parameters": [],
+          "decorators": [
+            {
+              "name": "router.get",
+              "args": "'/'",
+              "raw": "@router.get('/')",
+              "lineno": 37
+            }
+          ],
+          "docstring": null,
+          "lineno": 38
+        },
+        {
+          "path": "app/routers.py",
+          "module": "app.routers",
+          "name": "add_user",
+          "qualified_name": "app.routers.add_user",
+          "signature": "async def add_user(user: UserCreate, db: Session = Depends(get_db))",
+          "is_async": true,
+          "return_type": null,
+          "parameters": [
+            {
+              "name": "user",
+              "annotation": "UserCreate",
+              "default": null
+            },
+            {
+              "name": "db",
+              "annotation": "Session",
+              "default": "Depends(get_db)"
+            }
+          ],
+          "decorators": [
+            {
+              "name": "router.post",
+              "args": "'/createuser', response_model=UserResponse",
+              "raw": "@router.post('/createuser', response_model=UserResponse)",
+              "lineno": 41
+            }
+          ],
+          "docstring": null,
+          "lineno": 42
+        },
+        {
+          "path": "app/routers.py",
+          "module": "app.routers",
+          "name": "login",
+          "qualified_name": "app.routers.login",
+          "signature": "async def login(email: EmailStr = Form(), password: str = Form(), db: Session = Depends(get_db))",
+          "is_async": true,
+          "return_type": null,
+          "parameters": [
+            {
+              "name": "email",
+              "annotation": "EmailStr",
+              "default": "Form()"
+            },
+            {
+              "name": "password",
+              "annotation": "str",
+              "default": "Form()"
+            },
+            {
+              "name": "db",
+              "annotation": "Session",
+              "default": "Depends(get_db)"
+            }
+          ],
+          "decorators": [
+            {
+              "name": "router.post",
+              "args": "'/loginuser'",
+              "raw": "@router.post('/loginuser')",
+              "lineno": 60
+            }
+          ],
+          "docstring": null,
+          "lineno": 61
+        },
+        {
+          "path": "app/routers.py",
+          "module": "app.routers",
+          "name": "current_user",
+          "qualified_name": "app.routers.current_user",
+          "signature": "async def current_user(current_user_id: int = Depends(get_current_user))",
+          "is_async": true,
+          "return_type": null,
+          "parameters": [
+            {
+              "name": "current_user_id",
+              "annotation": "int",
+              "default": "Depends(get_current_user)"
+            }
+          ],
+          "decorators": [
+            {
+              "name": "router.get",
+              "args": "'/currentuser'",
+              "raw": "@router.get('/currentuser')",
+              "lineno": 79
+            }
+          ],
+          "docstring": null,
+          "lineno": 80
+        },
+        {
+          "path": "app/routers.py",
+          "module": "app.routers",
+          "name": "logout",
+          "qualified_name": "app.routers.logout",
+          "signature": "async def logout(current_user_id: str = Depends(get_current_user), db: Session = Depends(get_db))",
+          "is_async": true,
+          "return_type": null,
+          "parameters": [
+            {
+              "name": "current_user_id",
+              "annotation": "str",
+              "default": "Depends(get_current_user)"
+            },
+            {
+              "name": "db",
+              "annotation": "Session",
+              "default": "Depends(get_db)"
+            }
+          ],
+          "decorators": [
+            {
+              "name": "router.post",
+              "args": "\"/logout\"",
+              "raw": "@router.post(\"/logout\")",
+              "lineno": 83
+            }
+          ],
+          "docstring": null,
+          "lineno": 84
+        },
+        {
+          "path": "app/routers.py",
+          "module": "app.routers",
+          "name": "add_product",
+          "qualified_name": "app.routers.add_product",
+          "signature": "async def add_product(current_user_id: int = Depends(get_current_user), product_name: str = Form(), price: float = Form(), category: str = Form(), description: UploadFile = File(), image: UploadFile = File(), db: Session = Depends(get_db))",
+          "is_async": true,
+          "return_type": null,
+          "parameters": [
+            {
+              "name": "current_user_id",
+              "annotation": "int",
+              "default": "Depends(get_current_user)"
+            },
+            {
+              "name": "product_name",
+              "annotation": "str",
+              "default": "Form()"
+            },
+            {
+              "name": "price",
+              "annotation": "float",
+              "default": "Form()"
+            },
+            {
+              "name": "category",
+              "annotation": "str",
+              "default": "Form()"
+            },
+            {
+              "name": "description",
+              "annotation": "UploadFile",
+              "default": "File()"
+            },
+            {
+              "name": "image",
+              "annotation": "UploadFile",
+              "default": "File()"
+            },
+            {
+              "name": "db",
+              "annotation": "Session",
+              "default": "Depends(get_db)"
+            }
+          ],
+          "decorators": [
+            {
+              "name": "router.post",
+              "args": "'/addproduct'",
+              "raw": "@router.post('/addproduct')",
+              "lineno": 93
+            }
+          ],
+          "docstring": null,
+          "lineno": 94
+        },
+        {
+          "path": "app/routers.py",
+          "module": "app.routers",
+          "name": "add_to_cart",
+          "qualified_name": "app.routers.add_to_cart",
+          "signature": "async def add_to_cart(request: Request, product_id: str = Form(), quantity: int = Form(), db: Session = Depends(get_db))",
+          "is_async": true,
+          "return_type": null,
+          "parameters": [
+            {
+              "name": "request",
+              "annotation": "Request",
+              "default": null
+            },
+            {
+              "name": "product_id",
+              "annotation": "str",
+              "default": "Form()"
+            },
+            {
+              "name": "quantity",
+              "annotation": "int",
+              "default": "Form()"
+            },
+            {
+              "name": "db",
+              "annotation": "Session",
+              "default": "Depends(get_db)"
+            }
+          ],
+          "decorators": [
+            {
+              "name": "router.post",
+              "args": "\"/cart/add\"",
+              "raw": "@router.post(\"/cart/add\")",
+              "lineno": 122
+            }
+          ],
+          "docstring": null,
+          "lineno": 123
+        },
+        {
+          "path": "app/routers.py",
+          "module": "app.routers",
+          "name": "remove_from_cart",
+          "qualified_name": "app.routers.remove_from_cart",
+          "signature": "async def remove_from_cart(request: Request, product_id: str)",
+          "is_async": true,
+          "return_type": null,
+          "parameters": [
+            {
+              "name": "request",
+              "annotation": "Request",
+              "default": null
+            },
+            {
+              "name": "product_id",
+              "annotation": "str",
+              "default": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "router.post",
+              "args": "\"/cart/remove/{product_id}\"",
+              "raw": "@router.post(\"/cart/remove/{product_id}\")",
+              "lineno": 142
+            }
+          ],
+          "docstring": null,
+          "lineno": 143
+        },
+        {
+          "path": "app/routers.py",
+          "module": "app.routers",
+          "name": "make_order",
+          "qualified_name": "app.routers.make_order",
+          "signature": "async def make_order(request: Request, current_user_id: int = Depends(get_current_user), db: Session = Depends(get_db))",
+          "is_async": true,
+          "return_type": null,
+          "parameters": [
+            {
+              "name": "request",
+              "annotation": "Request",
+              "default": null
+            },
+            {
+              "name": "current_user_id",
+              "annotation": "int",
+              "default": "Depends(get_current_user)"
+            },
+            {
+              "name": "db",
+              "annotation": "Session",
+              "default": "Depends(get_db)"
+            }
+          ],
+          "decorators": [
+            {
+              "name": "router.post",
+              "args": "'/makeorder'",
+              "raw": "@router.post('/makeorder')",
+              "lineno": 151
+            }
+          ],
+          "docstring": null,
+          "lineno": 152
+        },
+        {
+          "path": "app/routers.py",
+          "module": "app.routers",
+          "name": "view_cart",
+          "qualified_name": "app.routers.view_cart",
+          "signature": "async def view_cart(request: Request)",
+          "is_async": true,
+          "return_type": null,
+          "parameters": [
+            {
+              "name": "request",
+              "annotation": "Request",
+              "default": null
+            }
+          ],
+          "decorators": [
+            {
+              "name": "router.get",
+              "args": "\"/viewcart\"",
+              "raw": "@router.get(\"/viewcart\")",
+              "lineno": 199
+            }
+          ],
+          "docstring": null,
+          "lineno": 200
+        },
+        {
+          "path": "app/routers.py",
+          "module": "app.routers",
+          "name": "update_product",
+          "qualified_name": "app.routers.update_product",
+          "signature": "async def update_product(id: int, current_user_id: int = Depends(get_current_user), product_name: str = Form(), description: UploadFile = File(), category: str = Form(), price: int = Form(), image: UploadFile = File(), db: Session = Depends(get_db))",
+          "is_async": true,
+          "return_type": null,
+          "parameters": [
+            {
+              "name": "id",
+              "annotation": "int",
+              "default": null
+            },
+            {
+              "name": "current_user_id",
+              "annotation": "int",
+              "default": "Depends(get_current_user)"
+            },
+            {
+              "name": "product_name",
+              "annotation": "str",
+              "default": "Form()"
+            },
+            {
+              "name": "description",
+              "annotation": "UploadFile",
+              "default": "File()"
+            },
+            {
+              "name": "category",
+              "annotation": "str",
+              "default": "Form()"
+            },
+            {
+              "name": "price",
+              "annotation": "int",
+              "default": "Form()"
+            },
+            {
+              "name": "image",
+              "annotation": "UploadFile",
+              "default": "File()"
+            },
+            {
+              "name": "db",
+              "annotation": "Session",
+              "default": "Depends(get_db)"
+            }
+          ],
+          "decorators": [
+            {
+              "name": "router.patch",
+              "args": "\"/updateproduct/{id}\"",
+              "raw": "@router.patch(\"/updateproduct/{id}\")",
+              "lineno": 204
+            }
+          ],
+          "docstring": null,
+          "lineno": 205
+        },
+        {
+          "path": "app/routers.py",
+          "module": "app.routers",
+          "name": "get_product",
+          "qualified_name": "app.routers.get_product",
+          "signature": "async def get_product(db: Session = Depends(get_db))",
+          "is_async": true,
+          "return_type": null,
+          "parameters": [
+            {
+              "name": "db",
+              "annotation": "Session",
+              "default": "Depends(get_db)"
+            }
+          ],
+          "decorators": [
+            {
+              "name": "router.get",
+              "args": "\"/getallproducts\"",
+              "raw": "@router.get(\"/getallproducts\")",
+              "lineno": 247
+            }
+          ],
+          "docstring": null,
+          "lineno": 248
+        },
+        {
+          "path": "app/routers.py",
+          "module": "app.routers",
+          "name": "get_product",
+          "qualified_name": "app.routers.get_product",
+          "signature": "async def get_product(id: int, db: Session = Depends(get_db))",
+          "is_async": true,
+          "return_type": null,
+          "parameters": [
+            {
+              "name": "id",
+              "annotation": "int",
+              "default": null
+            },
+            {
+              "name": "db",
+              "annotation": "Session",
+              "default": "Depends(get_db)"
+            }
+          ],
+          "decorators": [
+            {
+              "name": "router.get",
+              "args": "\"/getproduct/{id}\"",
+              "raw": "@router.get(\"/getproduct/{id}\")",
+              "lineno": 254
+            }
+          ],
+          "docstring": null,
+          "lineno": 255
+        },
+        {
+          "path": "app/routers.py",
+          "module": "app.routers",
+          "name": "delete_product",
+          "qualified_name": "app.routers.delete_product",
+          "signature": "async def delete_product(id: int, current_user_id: int = Depends(get_current_user), db: Session = Depends(get_db))",
+          "is_async": true,
+          "return_type": null,
+          "parameters": [
+            {
+              "name": "id",
+              "annotation": "int",
+              "default": null
+            },
+            {
+              "name": "current_user_id",
+              "annotation": "int",
+              "default": "Depends(get_current_user)"
+            },
+            {
+              "name": "db",
+              "annotation": "Session",
+              "default": "Depends(get_db)"
+            }
+          ],
+          "decorators": [
+            {
+              "name": "router.delete",
+              "args": "\"/deleteproduct/{id}\"",
+              "raw": "@router.delete(\"/deleteproduct/{id}\")",
+              "lineno": 282
+            }
+          ],
+          "docstring": null,
+          "lineno": 283
+        },
+        {
+          "path": "app/routers.py",
+          "module": "app.routers",
+          "name": "retrieve_product",
+          "qualified_name": "app.routers.retrieve_product",
+          "signature": "async def retrieve_product(id: int, current_user_id: int = Depends(get_current_user), db: Session = Depends(get_db))",
+          "is_async": true,
+          "return_type": null,
+          "parameters": [
+            {
+              "name": "id",
+              "annotation": "int",
+              "default": null
+            },
+            {
+              "name": "current_user_id",
+              "annotation": "int",
+              "default": "Depends(get_current_user)"
+            },
+            {
+              "name": "db",
+              "annotation": "Session",
+              "default": "Depends(get_db)"
+            }
+          ],
+          "decorators": [
+            {
+              "name": "router.delete",
+              "args": "\"/retrieveproduct/{id}\"",
+              "raw": "@router.delete(\"/retrieveproduct/{id}\")",
+              "lineno": 313
+            }
+          ],
+          "docstring": null,
+          "lineno": 314
+        },
+        {
+          "path": "app/utils.py",
+          "module": "app.utils",
+          "name": "get_user",
+          "qualified_name": "app.utils.get_user",
+          "signature": "def get_user(db: Session, email: EmailStr)",
+          "is_async": false,
+          "return_type": null,
+          "parameters": [
+            {
+              "name": "db",
+              "annotation": "Session",
+              "default": null
+            },
+            {
+              "name": "email",
+              "annotation": "EmailStr",
+              "default": null
+            }
+          ],
+          "decorators": [],
+          "docstring": null,
+          "lineno": 23
+        },
+        {
+          "path": "app/utils.py",
+          "module": "app.utils",
+          "name": "hash_password",
+          "qualified_name": "app.utils.hash_password",
+          "signature": "def hash_password(password: str) -> str",
+          "is_async": false,
+          "return_type": "str",
+          "parameters": [
+            {
+              "name": "password",
+              "annotation": "str",
+              "default": null
+            }
+          ],
+          "decorators": [],
+          "docstring": null,
+          "lineno": 27
+        },
+        {
+          "path": "app/utils.py",
+          "module": "app.utils",
+          "name": "verify_password",
+          "qualified_name": "app.utils.verify_password",
+          "signature": "def verify_password(plain_password: str, hashed_password: str) -> bool",
+          "is_async": false,
+          "return_type": "bool",
+          "parameters": [
+            {
+              "name": "plain_password",
+              "annotation": "str",
+              "default": null
+            },
+            {
+              "name": "hashed_password",
+              "annotation": "str",
+              "default": null
+            }
+          ],
+          "decorators": [],
+          "docstring": null,
+          "lineno": 30
+        },
+        {
+          "path": "app/utils.py",
+          "module": "app.utils",
+          "name": "create_access_token",
+          "qualified_name": "app.utils.create_access_token",
+          "signature": "def create_access_token(subject: str, session_id: str, expires_delta: int = None) -> str",
+          "is_async": false,
+          "return_type": "str",
+          "parameters": [
+            {
+              "name": "subject",
+              "annotation": "str",
+              "default": null
+            },
+            {
+              "name": "session_id",
+              "annotation": "str",
+              "default": null
+            },
+            {
+              "name": "expires_delta",
+              "annotation": "int",
+              "default": "None"
+            }
+          ],
+          "decorators": [],
+          "docstring": null,
+          "lineno": 33
+        },
+        {
+          "path": "app/utils.py",
+          "module": "app.utils",
+          "name": "create_refresh_token",
+          "qualified_name": "app.utils.create_refresh_token",
+          "signature": "def create_refresh_token(subject: str, session_id: str, expires_delta: int = None) -> str",
+          "is_async": false,
+          "return_type": "str",
+          "parameters": [
+            {
+              "name": "subject",
+              "annotation": "str",
+              "default": null
+            },
+            {
+              "name": "session_id",
+              "annotation": "str",
+              "default": null
+            },
+            {
+              "name": "expires_delta",
+              "annotation": "int",
+              "default": "None"
+            }
+          ],
+          "decorators": [],
+          "docstring": null,
+          "lineno": 43
+        },
+        {
+          "path": "app/utils.py",
+          "module": "app.utils",
+          "name": "get_current_user",
+          "qualified_name": "app.utils.get_current_user",
+          "signature": "def get_current_user(credential: HTTPAuthorizationCredentials = Depends(bearer), db: Session = Depends(get_db))",
+          "is_async": false,
+          "return_type": null,
+          "parameters": [
+            {
+              "name": "credential",
+              "annotation": "HTTPAuthorizationCredentials",
+              "default": "Depends(bearer)"
+            },
+            {
+              "name": "db",
+              "annotation": "Session",
+              "default": "Depends(get_db)"
+            }
+          ],
+          "decorators": [],
+          "docstring": null,
+          "lineno": 53
+        },
+        {
+          "path": "app/utils.py",
+          "module": "app.utils",
+          "name": "clear_cart",
+          "qualified_name": "app.utils.clear_cart",
+          "signature": "def clear_cart(request: Request)",
+          "is_async": false,
+          "return_type": null,
+          "parameters": [
+            {
+              "name": "request",
+              "annotation": "Request",
+              "default": null
+            }
+          ],
+          "decorators": [],
+          "docstring": null,
+          "lineno": 79
+        }
+      ]
+    },
+    "classes": {
+      "total": 12,
+      "method_total": 0,
+      "classes": [
+        {
+          "name": "User1",
+          "bases": [
+            "Base"
+          ],
+          "methods": [],
+          "attributes": [
+            {
+              "name": "__tablename__",
+              "annotation": null,
+              "value": "'users'",
+              "lineno": 7
+            },
+            {
+              "name": "id",
+              "annotation": null,
+              "value": "Column(Integer, primary_key=True)",
+              "lineno": 8
+            },
+            {
+              "name": "first_name",
+              "annotation": null,
+              "value": "Column(String)",
+              "lineno": 9
+            },
+            {
+              "name": "last_name",
+              "annotation": null,
+              "value": "Column(String)",
+              "lineno": 10
+            },
+            {
+              "name": "email",
+              "annotation": null,
+              "value": "Column(String, unique=True, nullable=False)",
+              "lineno": 11
+            },
+            {
+              "name": "password",
+              "annotation": null,
+              "value": "Column(String, nullable=False)",
+              "lineno": 12
+            },
+            {
+              "name": "is_admin",
+              "annotation": null,
+              "value": "Column(Boolean)",
+              "lineno": 13
+            },
+            {
+              "name": "created_at",
+              "annotation": null,
+              "value": "Column(DateTime, nullable=False, default=datetime.now())",
+              "lineno": 14
+            },
+            {
+              "name": "last_login",
+              "annotation": null,
+              "value": "Column(DateTime, nullable=True)",
+              "lineno": 15
+            },
+            {
+              "name": "session_id",
+              "annotation": null,
+              "value": "Column(String, nullable=True)",
+              "lineno": 16
+            }
+          ],
+          "decorators": [],
+          "lineno": 6,
+          "end_lineno": 17,
+          "docstring": null,
+          "path": "app/models.py",
+          "module": "app.models",
+          "qualified_name": "app.models.User1",
+          "method_count": 0,
+          "attribute_count": 10
+        },
+        {
+          "name": "Product",
+          "bases": [
+            "Base"
+          ],
+          "methods": [],
+          "attributes": [
+            {
+              "name": "__tablename__",
+              "annotation": null,
+              "value": "'products'",
+              "lineno": 20
+            },
+            {
+              "name": "id",
+              "annotation": null,
+              "value": "Column(Integer, primary_key=True)",
+              "lineno": 21
+            },
+            {
+              "name": "product_name",
+              "annotation": null,
+              "value": "Column(String)",
+              "lineno": 22
+            },
+            {
+              "name": "description",
+              "annotation": null,
+              "value": "Column(String)",
+              "lineno": 23
+            },
+            {
+              "name": "category",
+              "annotation": null,
+              "value": "Column(String)",
+              "lineno": 24
+            },
+            {
+              "name": "price",
+              "annotation": null,
+              "value": "Column(Float)",
+              "lineno": 25
+            },
+            {
+              "name": "created_at",
+              "annotation": null,
+              "value": "Column(DateTime, nullable=False, default=datetime.now())",
+              "lineno": 26
+            },
+            {
+              "name": "created_by",
+              "annotation": null,
+              "value": "Column(Integer)",
+              "lineno": 27
+            },
+            {
+              "name": "updated_at",
+              "annotation": null,
+              "value": "Column(DateTime, nullable=True)",
+              "lineno": 28
+            },
+            {
+              "name": "updated_by",
+              "annotation": null,
+              "value": "Column(Integer, nullable=True)",
+              "lineno": 29
+            },
+            {
+              "name": "delivery_in_days",
+              "annotation": null,
+              "value": "Column(Integer, nullable=True)",
+              "lineno": 30
+            },
+            {
+              "name": "product_image",
+              "annotation": null,
+              "value": "Column(String, nullable=True)",
+              "lineno": 31
+            },
+            {
+              "name": "is_active",
+              "annotation": null,
+              "value": "Column(Boolean, default=True)",
+              "lineno": 32
+            }
+          ],
+          "decorators": [],
+          "lineno": 19,
+          "end_lineno": 34,
+          "docstring": null,
+          "path": "app/models.py",
+          "module": "app.models",
+          "qualified_name": "app.models.Product",
+          "method_count": 0,
+          "attribute_count": 13
+        },
+        {
+          "name": "Order",
+          "bases": [
+            "Base"
+          ],
+          "methods": [],
+          "attributes": [
+            {
+              "name": "__tablename__",
+              "annotation": null,
+              "value": "'orders'",
+              "lineno": 37
+            },
+            {
+              "name": "id",
+              "annotation": null,
+              "value": "Column(Integer, primary_key=True)",
+              "lineno": 38
+            },
+            {
+              "name": "order_date",
+              "annotation": null,
+              "value": "Column(DateTime, default=datetime.now())",
+              "lineno": 39
+            },
+            {
+              "name": "status",
+              "annotation": null,
+              "value": "Column(String)",
+              "lineno": 40
+            },
+            {
+              "name": "total_amount",
+              "annotation": null,
+              "value": "Column(Integer)",
+              "lineno": 41
+            },
+            {
+              "name": "created_by",
+              "annotation": null,
+              "value": "Column(Integer)",
+              "lineno": 42
+            }
+          ],
+          "decorators": [],
+          "lineno": 36,
+          "end_lineno": 44,
+          "docstring": null,
+          "path": "app/models.py",
+          "module": "app.models",
+          "qualified_name": "app.models.Order",
+          "method_count": 0,
+          "attribute_count": 6
+        },
+        {
+          "name": "OrderItem",
+          "bases": [
+            "Base"
+          ],
+          "methods": [],
+          "attributes": [
+            {
+              "name": "__tablename__",
+              "annotation": null,
+              "value": "'orderitem'",
+              "lineno": 47
+            },
+            {
+              "name": "id",
+              "annotation": null,
+              "value": "Column(Integer, primary_key=True)",
+              "lineno": 48
+            },
+            {
+              "name": "order_id",
+              "annotation": null,
+              "value": "Column(Integer, ForeignKey(\"orders.id\"))",
+              "lineno": 49
+            },
+            {
+              "name": "product_id",
+              "annotation": null,
+              "value": "Column(Integer, ForeignKey(\"products.id\"))",
+              "lineno": 50
+            },
+            {
+              "name": "quantity",
+              "annotation": null,
+              "value": "Column(Integer)",
+              "lineno": 51
+            }
+          ],
+          "decorators": [],
+          "lineno": 46,
+          "end_lineno": 53,
+          "docstring": null,
+          "path": "app/models.py",
+          "module": "app.models",
+          "qualified_name": "app.models.OrderItem",
+          "method_count": 0,
+          "attribute_count": 5
+        },
+        {
+          "name": "BlacklistedToken",
+          "bases": [
+            "Base"
+          ],
+          "methods": [],
+          "attributes": [
+            {
+              "name": "__tablename__",
+              "annotation": null,
+              "value": "'blacklisted_tokens'",
+              "lineno": 56
+            },
+            {
+              "name": "id",
+              "annotation": null,
+              "value": "Column(Integer, primary_key=True)",
+              "lineno": 57
+            },
+            {
+              "name": "jti",
+              "annotation": null,
+              "value": "Column(String)",
+              "lineno": 58
+            },
+            {
+              "name": "expires_at",
+              "annotation": null,
+              "value": "Column(DateTime(timezone=True), nullable=True)",
+              "lineno": 59
+            }
+          ],
+          "decorators": [],
+          "lineno": 55,
+          "end_lineno": 59,
+          "docstring": null,
+          "path": "app/models.py",
+          "module": "app.models",
+          "qualified_name": "app.models.BlacklistedToken",
+          "method_count": 0,
+          "attribute_count": 4
+        },
+        {
+          "name": "UserCreate",
+          "bases": [
+            "BaseModel"
+          ],
+          "methods": [],
+          "attributes": [
+            {
+              "name": "first_name",
+              "annotation": "str",
+              "value": null,
+              "lineno": 6
+            },
+            {
+              "name": "last_name",
+              "annotation": "str",
+              "value": null,
+              "lineno": 7
+            },
+            {
+              "name": "email",
+              "annotation": "EmailStr",
+              "value": null,
+              "lineno": 8
+            },
+            {
+              "name": "password",
+              "annotation": "str",
+              "value": null,
+              "lineno": 9
+            },
+            {
+              "name": "is_admin",
+              "annotation": "bool",
+              "value": null,
+              "lineno": 10
+            }
+          ],
+          "decorators": [],
+          "lineno": 5,
+          "end_lineno": 10,
+          "docstring": null,
+          "path": "app/schema.py",
+          "module": "app.schema",
+          "qualified_name": "app.schema.UserCreate",
+          "method_count": 0,
+          "attribute_count": 5
+        },
+        {
+          "name": "UserResponse",
+          "bases": [
+            "BaseModel"
+          ],
+          "methods": [],
+          "attributes": [
+            {
+              "name": "id",
+              "annotation": "int",
+              "value": null,
+              "lineno": 13
+            },
+            {
+              "name": "first_name",
+              "annotation": "str",
+              "value": null,
+              "lineno": 14
+            },
+            {
+              "name": "last_name",
+              "annotation": "str",
+              "value": null,
+              "lineno": 15
+            },
+            {
+              "name": "email",
+              "annotation": "EmailStr",
+              "value": null,
+              "lineno": 16
+            },
+            {
+              "name": "is_admin",
+              "annotation": "bool",
+              "value": null,
+              "lineno": 17
+            },
+            {
+              "name": "created_at",
+              "annotation": "datetime",
+              "value": null,
+              "lineno": 18
+            },
+            {
+              "name": "last_login",
+              "annotation": "Optional[datetime]",
+              "value": null,
+              "lineno": 19
+            }
+          ],
+          "decorators": [],
+          "lineno": 12,
+          "end_lineno": 19,
+          "docstring": null,
+          "path": "app/schema.py",
+          "module": "app.schema",
+          "qualified_name": "app.schema.UserResponse",
+          "method_count": 0,
+          "attribute_count": 7
+        },
+        {
+          "name": "ProductSchema",
+          "bases": [
+            "BaseModel"
+          ],
+          "methods": [],
+          "attributes": [
+            {
+              "name": "product_name",
+              "annotation": "str",
+              "value": null,
+              "lineno": 22
+            },
+            {
+              "name": "description",
+              "annotation": "str",
+              "value": null,
+              "lineno": 23
+            },
+            {
+              "name": "category",
+              "annotation": "str",
+              "value": null,
+              "lineno": 24
+            },
+            {
+              "name": "price",
+              "annotation": "int",
+              "value": null,
+              "lineno": 25
+            },
+            {
+              "name": "created_by",
+              "annotation": "int",
+              "value": null,
+              "lineno": 26
+            }
+          ],
+          "decorators": [],
+          "lineno": 21,
+          "end_lineno": 26,
+          "docstring": null,
+          "path": "app/schema.py",
+          "module": "app.schema",
+          "qualified_name": "app.schema.ProductSchema",
+          "method_count": 0,
+          "attribute_count": 5
+        },
+        {
+          "name": "CartItem",
+          "bases": [
+            "BaseModel"
+          ],
+          "methods": [],
+          "attributes": [
+            {
+              "name": "product_id",
+              "annotation": "int",
+              "value": null,
+              "lineno": 29
+            },
+            {
+              "name": "price",
+              "annotation": "float",
+              "value": null,
+              "lineno": 30
+            },
+            {
+              "name": "quantity",
+              "annotation": "int",
+              "value": null,
+              "lineno": 31
+            }
+          ],
+          "decorators": [],
+          "lineno": 28,
+          "end_lineno": 31,
+          "docstring": null,
+          "path": "app/schema.py",
+          "module": "app.schema",
+          "qualified_name": "app.schema.CartItem",
+          "method_count": 0,
+          "attribute_count": 3
+        },
+        {
+          "name": "OrderSchema",
+          "bases": [
+            "BaseModel"
+          ],
+          "methods": [],
+          "attributes": [
+            {
+              "name": "order_date",
+              "annotation": "datetime",
+              "value": null,
+              "lineno": 34
+            },
+            {
+              "name": "status",
+              "annotation": "str",
+              "value": null,
+              "lineno": 35
+            },
+            {
+              "name": "total_amount",
+              "annotation": "int",
+              "value": null,
+              "lineno": 36
+            },
+            {
+              "name": "created_by",
+              "annotation": "int",
+              "value": null,
+              "lineno": 37
+            }
+          ],
+          "decorators": [],
+          "lineno": 33,
+          "end_lineno": 37,
+          "docstring": null,
+          "path": "app/schema.py",
+          "module": "app.schema",
+          "qualified_name": "app.schema.OrderSchema",
+          "method_count": 0,
+          "attribute_count": 4
+        },
+        {
+          "name": "OrderItemSchema",
+          "bases": [
+            "BaseModel"
+          ],
+          "methods": [],
+          "attributes": [
+            {
+              "name": "order_id",
+              "annotation": "int",
+              "value": null,
+              "lineno": 40
+            },
+            {
+              "name": "product_id",
+              "annotation": "int",
+              "value": null,
+              "lineno": 41
+            },
+            {
+              "name": "quantity",
+              "annotation": "int",
+              "value": null,
+              "lineno": 42
+            }
+          ],
+          "decorators": [],
+          "lineno": 39,
+          "end_lineno": 42,
+          "docstring": null,
+          "path": "app/schema.py",
+          "module": "app.schema",
+          "qualified_name": "app.schema.OrderItemSchema",
+          "method_count": 0,
+          "attribute_count": 3
+        },
+        {
+          "name": "GetProductSchema",
+          "bases": [
+            "BaseModel"
+          ],
+          "methods": [],
+          "attributes": [
+            {
+              "name": "id",
+              "annotation": "int",
+              "value": null,
+              "lineno": 45
+            },
+            {
+              "name": "product_name",
+              "annotation": "str",
+              "value": null,
+              "lineno": 46
+            },
+            {
+              "name": "product_image",
+              "annotation": "str",
+              "value": null,
+              "lineno": 47
+            },
+            {
+              "name": "description",
+              "annotation": "str",
+              "value": null,
+              "lineno": 48
+            },
+            {
+              "name": "category",
+              "annotation": "str",
+              "value": null,
+              "lineno": 49
+            },
+            {
+              "name": "price",
+              "annotation": "int",
+              "value": null,
+              "lineno": 50
+            }
+          ],
+          "decorators": [],
+          "lineno": 44,
+          "end_lineno": 53,
+          "docstring": null,
+          "path": "app/schema.py",
+          "module": "app.schema",
+          "qualified_name": "app.schema.GetProductSchema",
+          "method_count": 0,
+          "attribute_count": 6
+        }
+      ]
+    },
+    "api": {
+      "frameworks": [
+        "FastAPI"
+      ],
+      "endpoint_count": 15,
+      "routers": [
+        {
+          "name": "router",
+          "kind": "APIRouter",
+          "framework": "FastAPI",
+          "module": "app.routers",
+          "file": "app/routers.py",
+          "lineno": 15
+        },
+        {
+          "name": "app",
+          "kind": "app",
+          "framework": "FastAPI",
+          "module": "main",
+          "file": "main.py",
+          "lineno": 9
+        }
+      ],
+      "endpoints": [
+        {
+          "method": "GET",
+          "path": "/",
+          "handler": "welcome",
+          "handler_class": null,
+          "router": "router",
+          "framework": "FastAPI",
+          "module": "app.routers",
+          "file": "app/routers.py",
+          "is_async": true,
+          "lineno": 37
+        },
+        {
+          "method": "POST",
+          "path": "/addproduct",
+          "handler": "add_product",
+          "handler_class": null,
+          "router": "router",
+          "framework": "FastAPI",
+          "module": "app.routers",
+          "file": "app/routers.py",
+          "is_async": true,
+          "lineno": 93
+        },
+        {
+          "method": "POST",
+          "path": "/cart/add",
+          "handler": "add_to_cart",
+          "handler_class": null,
+          "router": "router",
+          "framework": "FastAPI",
+          "module": "app.routers",
+          "file": "app/routers.py",
+          "is_async": true,
+          "lineno": 122
+        },
+        {
+          "method": "POST",
+          "path": "/cart/remove/{product_id}",
+          "handler": "remove_from_cart",
+          "handler_class": null,
+          "router": "router",
+          "framework": "FastAPI",
+          "module": "app.routers",
+          "file": "app/routers.py",
+          "is_async": true,
+          "lineno": 142
+        },
+        {
+          "method": "POST",
+          "path": "/createuser",
+          "handler": "add_user",
+          "handler_class": null,
+          "router": "router",
+          "framework": "FastAPI",
+          "module": "app.routers",
+          "file": "app/routers.py",
+          "is_async": true,
+          "lineno": 41
+        },
+        {
+          "method": "GET",
+          "path": "/currentuser",
+          "handler": "current_user",
+          "handler_class": null,
+          "router": "router",
+          "framework": "FastAPI",
+          "module": "app.routers",
+          "file": "app/routers.py",
+          "is_async": true,
+          "lineno": 79
+        },
+        {
+          "method": "DELETE",
+          "path": "/deleteproduct/{id}",
+          "handler": "delete_product",
+          "handler_class": null,
+          "router": "router",
+          "framework": "FastAPI",
+          "module": "app.routers",
+          "file": "app/routers.py",
+          "is_async": true,
+          "lineno": 282
+        },
+        {
+          "method": "GET",
+          "path": "/getallproducts",
+          "handler": "get_product",
+          "handler_class": null,
+          "router": "router",
+          "framework": "FastAPI",
+          "module": "app.routers",
+          "file": "app/routers.py",
+          "is_async": true,
+          "lineno": 247
+        },
+        {
+          "method": "GET",
+          "path": "/getproduct/{id}",
+          "handler": "get_product",
+          "handler_class": null,
+          "router": "router",
+          "framework": "FastAPI",
+          "module": "app.routers",
+          "file": "app/routers.py",
+          "is_async": true,
+          "lineno": 254
+        },
+        {
+          "method": "POST",
+          "path": "/loginuser",
+          "handler": "login",
+          "handler_class": null,
+          "router": "router",
+          "framework": "FastAPI",
+          "module": "app.routers",
+          "file": "app/routers.py",
+          "is_async": true,
+          "lineno": 60
+        },
+        {
+          "method": "POST",
+          "path": "/logout",
+          "handler": "logout",
+          "handler_class": null,
+          "router": "router",
+          "framework": "FastAPI",
+          "module": "app.routers",
+          "file": "app/routers.py",
+          "is_async": true,
+          "lineno": 83
+        },
+        {
+          "method": "POST",
+          "path": "/makeorder",
+          "handler": "make_order",
+          "handler_class": null,
+          "router": "router",
+          "framework": "FastAPI",
+          "module": "app.routers",
+          "file": "app/routers.py",
+          "is_async": true,
+          "lineno": 151
+        },
+        {
+          "method": "DELETE",
+          "path": "/retrieveproduct/{id}",
+          "handler": "retrieve_product",
+          "handler_class": null,
+          "router": "router",
+          "framework": "FastAPI",
+          "module": "app.routers",
+          "file": "app/routers.py",
+          "is_async": true,
+          "lineno": 313
+        },
+        {
+          "method": "PATCH",
+          "path": "/updateproduct/{id}",
+          "handler": "update_product",
+          "handler_class": null,
+          "router": "router",
+          "framework": "FastAPI",
+          "module": "app.routers",
+          "file": "app/routers.py",
+          "is_async": true,
+          "lineno": 204
+        },
+        {
+          "method": "GET",
+          "path": "/viewcart",
+          "handler": "view_cart",
+          "handler_class": null,
+          "router": "router",
+          "framework": "FastAPI",
+          "module": "app.routers",
+          "file": "app/routers.py",
+          "is_async": true,
+          "lineno": 199
+        }
+      ]
+    },
+    "call_graph": {
+      "node_count": 51,
+      "edge_count": 6,
+      "nodes": [
+        {
+          "id": "alembic.env.run_migrations_offline",
+          "name": "run_migrations_offline",
+          "module": "alembic.env",
+          "kind": "function",
+          "class": null
+        },
+        {
+          "id": "alembic.env.run_migrations_online",
+          "name": "run_migrations_online",
+          "module": "alembic.env",
+          "kind": "function",
+          "class": null
+        },
+        {
+          "id": "alembic.versions.1393308445ca_tables_created.upgrade",
+          "name": "upgrade",
+          "module": "alembic.versions.1393308445ca_tables_created",
+          "kind": "function",
+          "class": null
+        },
+        {
+          "id": "alembic.versions.1393308445ca_tables_created.downgrade",
+          "name": "downgrade",
+          "module": "alembic.versions.1393308445ca_tables_created",
+          "kind": "function",
+          "class": null
+        },
+        {
+          "id": "alembic.versions.222528c90341_tables_created.upgrade",
+          "name": "upgrade",
+          "module": "alembic.versions.222528c90341_tables_created",
+          "kind": "function",
+          "class": null
+        },
+        {
+          "id": "alembic.versions.222528c90341_tables_created.downgrade",
+          "name": "downgrade",
+          "module": "alembic.versions.222528c90341_tables_created",
+          "kind": "function",
+          "class": null
+        },
+        {
+          "id": "alembic.versions.283235d34326_columns_added.upgrade",
+          "name": "upgrade",
+          "module": "alembic.versions.283235d34326_columns_added",
+          "kind": "function",
+          "class": null
+        },
+        {
+          "id": "alembic.versions.283235d34326_columns_added.downgrade",
+          "name": "downgrade",
+          "module": "alembic.versions.283235d34326_columns_added",
+          "kind": "function",
+          "class": null
+        },
+        {
+          "id": "alembic.versions.3006ac59f891_column_added.upgrade",
+          "name": "upgrade",
+          "module": "alembic.versions.3006ac59f891_column_added",
+          "kind": "function",
+          "class": null
+        },
+        {
+          "id": "alembic.versions.3006ac59f891_column_added.downgrade",
+          "name": "downgrade",
+          "module": "alembic.versions.3006ac59f891_column_added",
+          "kind": "function",
+          "class": null
+        },
+        {
+          "id": "alembic.versions.3097f8991010_constraint_changed.upgrade",
+          "name": "upgrade",
+          "module": "alembic.versions.3097f8991010_constraint_changed",
+          "kind": "function",
+          "class": null
+        },
+        {
+          "id": "alembic.versions.3097f8991010_constraint_changed.downgrade",
+          "name": "downgrade",
+          "module": "alembic.versions.3097f8991010_constraint_changed",
+          "kind": "function",
+          "class": null
+        },
+        {
+          "id": "alembic.versions.34ba9630b2dd_columns_added.upgrade",
+          "name": "upgrade",
+          "module": "alembic.versions.34ba9630b2dd_columns_added",
+          "kind": "function",
+          "class": null
+        },
+        {
+          "id": "alembic.versions.34ba9630b2dd_columns_added.downgrade",
+          "name": "downgrade",
+          "module": "alembic.versions.34ba9630b2dd_columns_added",
+          "kind": "function",
+          "class": null
+        },
+        {
+          "id": "alembic.versions.898fb4c0d6a9_columns_added.upgrade",
+          "name": "upgrade",
+          "module": "alembic.versions.898fb4c0d6a9_columns_added",
+          "kind": "function",
+          "class": null
+        },
+        {
+          "id": "alembic.versions.898fb4c0d6a9_columns_added.downgrade",
+          "name": "downgrade",
+          "module": "alembic.versions.898fb4c0d6a9_columns_added",
+          "kind": "function",
+          "class": null
+        },
+        {
+          "id": "alembic.versions.9271bb9320b8_table_created.upgrade",
+          "name": "upgrade",
+          "module": "alembic.versions.9271bb9320b8_table_created",
+          "kind": "function",
+          "class": null
+        },
+        {
+          "id": "alembic.versions.9271bb9320b8_table_created.downgrade",
+          "name": "downgrade",
+          "module": "alembic.versions.9271bb9320b8_table_created",
+          "kind": "function",
+          "class": null
+        },
+        {
+          "id": "alembic.versions.b13b6c3b20cf_column_added.upgrade",
+          "name": "upgrade",
+          "module": "alembic.versions.b13b6c3b20cf_column_added",
+          "kind": "function",
+          "class": null
+        },
+        {
+          "id": "alembic.versions.b13b6c3b20cf_column_added.downgrade",
+          "name": "downgrade",
+          "module": "alembic.versions.b13b6c3b20cf_column_added",
+          "kind": "function",
+          "class": null
+        },
+        {
+          "id": "alembic.versions.c3ba362c8cf5_column_removed.upgrade",
+          "name": "upgrade",
+          "module": "alembic.versions.c3ba362c8cf5_column_removed",
+          "kind": "function",
+          "class": null
+        },
+        {
+          "id": "alembic.versions.c3ba362c8cf5_column_removed.downgrade",
+          "name": "downgrade",
+          "module": "alembic.versions.c3ba362c8cf5_column_removed",
+          "kind": "function",
+          "class": null
+        },
+        {
+          "id": "alembic.versions.c87846d855fe_columns_added.upgrade",
+          "name": "upgrade",
+          "module": "alembic.versions.c87846d855fe_columns_added",
+          "kind": "function",
+          "class": null
+        },
+        {
+          "id": "alembic.versions.c87846d855fe_columns_added.downgrade",
+          "name": "downgrade",
+          "module": "alembic.versions.c87846d855fe_columns_added",
+          "kind": "function",
+          "class": null
+        },
+        {
+          "id": "alembic.versions.cdcbc5bc00c6_column_added.upgrade",
+          "name": "upgrade",
+          "module": "alembic.versions.cdcbc5bc00c6_column_added",
+          "kind": "function",
+          "class": null
+        },
+        {
+          "id": "alembic.versions.cdcbc5bc00c6_column_added.downgrade",
+          "name": "downgrade",
+          "module": "alembic.versions.cdcbc5bc00c6_column_added",
+          "kind": "function",
+          "class": null
+        },
+        {
+          "id": "alembic.versions.d63cff9e26c2_tables_created.upgrade",
+          "name": "upgrade",
+          "module": "alembic.versions.d63cff9e26c2_tables_created",
+          "kind": "function",
+          "class": null
+        },
+        {
+          "id": "alembic.versions.d63cff9e26c2_tables_created.downgrade",
+          "name": "downgrade",
+          "module": "alembic.versions.d63cff9e26c2_tables_created",
+          "kind": "function",
+          "class": null
+        },
+        {
+          "id": "app.database.get_db",
+          "name": "get_db",
+          "module": "app.database",
+          "kind": "function",
+          "class": null
+        },
+        {
+          "id": "app.routers.welcome",
+          "name": "welcome",
+          "module": "app.routers",
+          "kind": "function",
+          "class": null
+        },
+        {
+          "id": "app.routers.add_user",
+          "name": "add_user",
+          "module": "app.routers",
+          "kind": "function",
+          "class": null
+        },
+        {
+          "id": "app.routers.login",
+          "name": "login",
+          "module": "app.routers",
+          "kind": "function",
+          "class": null
+        },
+        {
+          "id": "app.routers.current_user",
+          "name": "current_user",
+          "module": "app.routers",
+          "kind": "function",
+          "class": null
+        },
+        {
+          "id": "app.routers.logout",
+          "name": "logout",
+          "module": "app.routers",
+          "kind": "function",
+          "class": null
+        },
+        {
+          "id": "app.routers.add_product",
+          "name": "add_product",
+          "module": "app.routers",
+          "kind": "function",
+          "class": null
+        },
+        {
+          "id": "app.routers.add_to_cart",
+          "name": "add_to_cart",
+          "module": "app.routers",
+          "kind": "function",
+          "class": null
+        },
+        {
+          "id": "app.routers.remove_from_cart",
+          "name": "remove_from_cart",
+          "module": "app.routers",
+          "kind": "function",
+          "class": null
+        },
+        {
+          "id": "app.routers.make_order",
+          "name": "make_order",
+          "module": "app.routers",
+          "kind": "function",
+          "class": null
+        },
+        {
+          "id": "app.routers.view_cart",
+          "name": "view_cart",
+          "module": "app.routers",
+          "kind": "function",
+          "class": null
+        },
+        {
+          "id": "app.routers.update_product",
+          "name": "update_product",
+          "module": "app.routers",
+          "kind": "function",
+          "class": null
+        },
+        {
+          "id": "app.routers.get_product",
+          "name": "get_product",
+          "module": "app.routers",
+          "kind": "function",
+          "class": null
+        },
+        {
+          "id": "app.routers.get_product",
+          "name": "get_product",
+          "module": "app.routers",
+          "kind": "function",
+          "class": null
+        },
+        {
+          "id": "app.routers.delete_product",
+          "name": "delete_product",
+          "module": "app.routers",
+          "kind": "function",
+          "class": null
+        },
+        {
+          "id": "app.routers.retrieve_product",
+          "name": "retrieve_product",
+          "module": "app.routers",
+          "kind": "function",
+          "class": null
+        },
+        {
+          "id": "app.utils.get_user",
+          "name": "get_user",
+          "module": "app.utils",
+          "kind": "function",
+          "class": null
+        },
+        {
+          "id": "app.utils.hash_password",
+          "name": "hash_password",
+          "module": "app.utils",
+          "kind": "function",
+          "class": null
+        },
+        {
+          "id": "app.utils.verify_password",
+          "name": "verify_password",
+          "module": "app.utils",
+          "kind": "function",
+          "class": null
+        },
+        {
+          "id": "app.utils.create_access_token",
+          "name": "create_access_token",
+          "module": "app.utils",
+          "kind": "function",
+          "class": null
+        },
+        {
+          "id": "app.utils.create_refresh_token",
+          "name": "create_refresh_token",
+          "module": "app.utils",
+          "kind": "function",
+          "class": null
+        },
+        {
+          "id": "app.utils.get_current_user",
+          "name": "get_current_user",
+          "module": "app.utils",
+          "kind": "function",
+          "class": null
+        },
+        {
+          "id": "app.utils.clear_cart",
+          "name": "clear_cart",
+          "module": "app.utils",
+          "kind": "function",
+          "class": null
+        }
+      ],
+      "edges": [
+        {
+          "caller": "app.routers.add_user",
+          "callee": "app.utils.hash_password"
+        },
+        {
+          "caller": "app.routers.login",
+          "callee": "app.utils.create_access_token"
+        },
+        {
+          "caller": "app.routers.login",
+          "callee": "app.utils.create_refresh_token"
+        },
+        {
+          "caller": "app.routers.login",
+          "callee": "app.utils.get_user"
+        },
+        {
+          "caller": "app.routers.login",
+          "callee": "app.utils.verify_password"
+        },
+        {
+          "caller": "app.routers.make_order",
+          "callee": "app.utils.clear_cart"
+        }
+      ],
+      "entry_points": [
+        "app.routers.add_user",
+        "app.routers.login",
+        "app.routers.make_order"
+      ],
+      "unresolved_calls": 65
+    },
+    "dependency_graph": {
+      "node_count": 20,
+      "edge_count": 25,
+      "nodes": [
+        {
+          "module": "alembic.env",
+          "path": "alembic/env.py",
+          "layer": "Other",
+          "fan_out": 3
+        },
+        {
+          "module": "alembic.versions.1393308445ca_tables_created",
+          "path": "alembic/versions/1393308445ca_tables_created.py",
+          "layer": "Other",
+          "fan_out": 1
+        },
+        {
+          "module": "alembic.versions.222528c90341_tables_created",
+          "path": "alembic/versions/222528c90341_tables_created.py",
+          "layer": "Other",
+          "fan_out": 1
+        },
+        {
+          "module": "alembic.versions.283235d34326_columns_added",
+          "path": "alembic/versions/283235d34326_columns_added.py",
+          "layer": "Other",
+          "fan_out": 1
+        },
+        {
+          "module": "alembic.versions.3006ac59f891_column_added",
+          "path": "alembic/versions/3006ac59f891_column_added.py",
+          "layer": "Other",
+          "fan_out": 1
+        },
+        {
+          "module": "alembic.versions.3097f8991010_constraint_changed",
+          "path": "alembic/versions/3097f8991010_constraint_changed.py",
+          "layer": "Other",
+          "fan_out": 1
+        },
+        {
+          "module": "alembic.versions.34ba9630b2dd_columns_added",
+          "path": "alembic/versions/34ba9630b2dd_columns_added.py",
+          "layer": "Other",
+          "fan_out": 1
+        },
+        {
+          "module": "alembic.versions.898fb4c0d6a9_columns_added",
+          "path": "alembic/versions/898fb4c0d6a9_columns_added.py",
+          "layer": "Other",
+          "fan_out": 1
+        },
+        {
+          "module": "alembic.versions.9271bb9320b8_table_created",
+          "path": "alembic/versions/9271bb9320b8_table_created.py",
+          "layer": "Other",
+          "fan_out": 1
+        },
+        {
+          "module": "alembic.versions.b13b6c3b20cf_column_added",
+          "path": "alembic/versions/b13b6c3b20cf_column_added.py",
+          "layer": "Other",
+          "fan_out": 1
+        },
+        {
+          "module": "alembic.versions.c3ba362c8cf5_column_removed",
+          "path": "alembic/versions/c3ba362c8cf5_column_removed.py",
+          "layer": "Other",
+          "fan_out": 1
+        },
+        {
+          "module": "alembic.versions.c87846d855fe_columns_added",
+          "path": "alembic/versions/c87846d855fe_columns_added.py",
+          "layer": "Other",
+          "fan_out": 1
+        },
+        {
+          "module": "alembic.versions.cdcbc5bc00c6_column_added",
+          "path": "alembic/versions/cdcbc5bc00c6_column_added.py",
+          "layer": "Other",
+          "fan_out": 1
+        },
+        {
+          "module": "alembic.versions.d63cff9e26c2_tables_created",
+          "path": "alembic/versions/d63cff9e26c2_tables_created.py",
+          "layer": "Other",
+          "fan_out": 1
+        },
+        {
+          "module": "app.database",
+          "path": "app/database.py",
+          "layer": "Data / Model",
+          "fan_out": 0
+        },
+        {
+          "module": "app.models",
+          "path": "app/models.py",
+          "layer": "Data / Model",
+          "fan_out": 1
+        },
+        {
+          "module": "app.routers",
+          "path": "app/routers.py",
+          "layer": "API / Controller",
+          "fan_out": 4
+        },
+        {
+          "module": "app.schema",
+          "path": "app/schema.py",
+          "layer": "Data / Model",
+          "fan_out": 0
+        },
+        {
+          "module": "app.utils",
+          "path": "app/utils.py",
+          "layer": "Entrypoint",
+          "fan_out": 2
+        },
+        {
+          "module": "main",
+          "path": "main.py",
+          "layer": "Entrypoint",
+          "fan_out": 2
+        }
+      ],
+      "edges": [
+        {
+          "from": "alembic.env",
+          "to": "alembic"
+        },
+        {
+          "from": "alembic.env",
+          "to": "app.database"
+        },
+        {
+          "from": "alembic.env",
+          "to": "app.models"
+        },
+        {
+          "from": "alembic.versions.1393308445ca_tables_created",
+          "to": "alembic"
+        },
+        {
+          "from": "alembic.versions.222528c90341_tables_created",
+          "to": "alembic"
+        },
+        {
+          "from": "alembic.versions.283235d34326_columns_added",
+          "to": "alembic"
+        },
+        {
+          "from": "alembic.versions.3006ac59f891_column_added",
+          "to": "alembic"
+        },
+        {
+          "from": "alembic.versions.3097f8991010_constraint_changed",
+          "to": "alembic"
+        },
+        {
+          "from": "alembic.versions.34ba9630b2dd_columns_added",
+          "to": "alembic"
+        },
+        {
+          "from": "alembic.versions.898fb4c0d6a9_columns_added",
+          "to": "alembic"
+        },
+        {
+          "from": "alembic.versions.9271bb9320b8_table_created",
+          "to": "alembic"
+        },
+        {
+          "from": "alembic.versions.b13b6c3b20cf_column_added",
+          "to": "alembic"
+        },
+        {
+          "from": "alembic.versions.c3ba362c8cf5_column_removed",
+          "to": "alembic"
+        },
+        {
+          "from": "alembic.versions.c87846d855fe_columns_added",
+          "to": "alembic"
+        },
+        {
+          "from": "alembic.versions.cdcbc5bc00c6_column_added",
+          "to": "alembic"
+        },
+        {
+          "from": "alembic.versions.d63cff9e26c2_tables_created",
+          "to": "alembic"
+        },
+        {
+          "from": "app.models",
+          "to": "app.database"
+        },
+        {
+          "from": "app.routers",
+          "to": "app.database"
+        },
+        {
+          "from": "app.routers",
+          "to": "app.models"
+        },
+        {
+          "from": "app.routers",
+          "to": "app.schema"
+        },
+        {
+          "from": "app.routers",
+          "to": "app.utils"
+        },
+        {
+          "from": "app.utils",
+          "to": "app.database"
+        },
+        {
+          "from": "app.utils",
+          "to": "app.models"
+        },
+        {
+          "from": "main",
+          "to": "app.database"
+        },
+        {
+          "from": "main",
+          "to": "app.routers"
+        }
+      ],
+      "has_cycles": false,
+      "cycles": [],
+      "layers": {
+        "Other": [
+          "alembic.env",
+          "alembic.versions.1393308445ca_tables_created",
+          "alembic.versions.222528c90341_tables_created",
+          "alembic.versions.283235d34326_columns_added",
+          "alembic.versions.3006ac59f891_column_added",
+          "alembic.versions.3097f8991010_constraint_changed",
+          "alembic.versions.34ba9630b2dd_columns_added",
+          "alembic.versions.898fb4c0d6a9_columns_added",
+          "alembic.versions.9271bb9320b8_table_created",
+          "alembic.versions.b13b6c3b20cf_column_added",
+          "alembic.versions.c3ba362c8cf5_column_removed",
+          "alembic.versions.c87846d855fe_columns_added",
+          "alembic.versions.cdcbc5bc00c6_column_added",
+          "alembic.versions.d63cff9e26c2_tables_created"
+        ],
+        "Data / Model": [
+          "app.database",
+          "app.models",
+          "app.schema"
+        ],
+        "API / Controller": [
+          "app.routers"
+        ],
+        "Entrypoint": [
+          "app.utils",
+          "main"
+        ]
+      },
+      "layer_edges": [
+        {
+          "from": "API / Controller",
+          "to": "Data / Model",
+          "count": 3
+        },
+        {
+          "from": "API / Controller",
+          "to": "Entrypoint",
+          "count": 1
+        },
+        {
+          "from": "Entrypoint",
+          "to": "API / Controller",
+          "count": 1
+        },
+        {
+          "from": "Entrypoint",
+          "to": "Data / Model",
+          "count": 3
+        },
+        {
+          "from": "Other",
+          "to": "Data / Model",
+          "count": 2
+        }
+      ]
+    }
+  }
+}
