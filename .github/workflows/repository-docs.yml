@@ -1,0 +1,47 @@
+# Repository Intelligence — Phase 1 documentation on merge/push to main.
+#
+# Copy this file into the application you want to document, at:
+#   .github/workflows/repository-docs.yml
+#
+# One-time setup in that repository:
+#   1. (Optional, for richer prose) add a repository secret GROQ_API_KEY
+#      (Settings -> Secrets and variables -> Actions). Without it, docs are
+#      still generated using deterministic templates.
+#   2. Commit this workflow to the default branch.
+#
+# After that, every push/merge into `main` re-analyzes the repository and
+# commits refreshed docs (README.md, PROJECT_OVERVIEW.md, TECH_STACK.md,
+# SETUP.md, PROJECT_STRUCTURE.md, repository_knowledge.json) under `docs/`.
+#
+# Works for ANY language — Phase 1 analysis is not Python-specific.
+
+name: Repository Intelligence Docs
+
+on:
+  push:
+    branches: [main]
+    # Prevent the bot's own docs commit from re-triggering this workflow.
+    paths-ignore:
+      - "docs/**"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: repo-intel-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  documentation:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Analyze & document
+        uses: abisheik-k/autodoc/phase1@main
+        with:
+          provider: groq
+          groq-api-key: ${{ secrets.GROQ_API_KEY }}
+          # Run without an LLM (deterministic only) by uncommenting:
+          # dry-run: "true"
