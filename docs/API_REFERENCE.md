@@ -2,7 +2,7 @@
 
 _Project: e-commerce_
 
-Web framework(s): FastAPI. Endpoints discovered: 15.
+Web framework(s): FastAPI. Endpoints discovered: 14.
 
 ## Endpoints
 
@@ -15,7 +15,6 @@ Web framework(s): FastAPI. Endpoints discovered: 15.
 | `POST` | `/createuser` | `add_user` | `app.routers` |
 | `GET` | `/currentuser` | `current_user` | `app.routers` |
 | `DELETE` | `/deleteproduct/{id}` | `delete_product` | `app.routers` |
-| `GET` | `/getallproducts` | `get_product` | `app.routers` |
 | `GET` | `/getproduct/{id}` | `get_product` | `app.routers` |
 | `POST` | `/loginuser` | `login` | `app.routers` |
 | `POST` | `/logout` | `logout` | `app.routers` |

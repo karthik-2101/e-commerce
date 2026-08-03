@@ -14,7 +14,7 @@ This document is generated from the Repository Knowledge Graph
 ## Code Structure
 
 - Modules parsed: 20
-- Functions: 51 (15 async)
+- Functions: 50 (14 async)
 - Classes: 12 (methods: 0)
 - Import statements: 87
 - External packages: 13

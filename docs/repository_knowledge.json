@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-07-31T14:19:14.834738+00:00",
+  "generated_at": "2026-08-03T08:22:46.109294+00:00",
   "metadata": {
     "name": "e-commerce",
     "root_path": "/home/runner/work/e-commerce/e-commerce",
@@ -9,25 +9,25 @@
     "default_branch": "main",
     "current_branch": "main",
     "latest_commit": {
-      "sha": "05b5e82dd7893c1ee69dcf6542e8766e03e1fa18",
-      "short_sha": "05b5e82",
-      "message": "Changing to tab spaces",
+      "sha": "fe3d87db08dd1810b7549d8f45f054c303ac9d95",
+      "short_sha": "fe3d87d",
+      "message": "Removed get all products for testing",
       "author": "karthik-2101",
       "email": "karthik.e@mitrahsoft.in",
-      "date": "2026-07-31T19:48:29+05:30"
+      "date": "2026-08-03T13:51:49+05:30"
     },
     "tags": []
   },
   "statistics": {
-    "total_files": 34,
-    "total_size_bytes": 1830756,
-    "total_directories": 7,
+    "total_files": 44,
+    "total_size_bytes": 1966128,
+    "total_directories": 8,
     "files_by_category": {
       "ci_cd": 1,
-      "configuration": 2,
+      "configuration": 3,
       "other": 2,
       "source_code": 20,
-      "documentation": 5,
+      "documentation": 14,
       "asset": 4
     },
     "language_count": 1,
@@ -39,7 +39,7 @@
     {
       "language": "Python",
       "files": 20,
-      "bytes": 35141,
+      "bytes": 34947,
       "percentage": 100.0
     }
   ],
@@ -166,6 +166,7 @@
       "alembic",
       "app",
       "description",
+      "docs",
       "images"
     ],
     "candidates": {
@@ -227,6 +228,20 @@
         "4_Mobile.txt"
       ]
     },
+    "docs": {
+      "__files__": [
+        "API_REFERENCE.md",
+        "ARCHITECTURE.md",
+        "CALL_GRAPH.md",
+        "DEPENDENCY_GRAPH.md",
+        "PROJECT_OVERVIEW.md",
+        "PROJECT_STRUCTURE.md",
+        "README.md",
+        "SETUP.md",
+        "TECH_STACK.md",
+        "repository_knowledge.json"
+      ]
+    },
     "images": {
       "__files__": [
         "1_bluetooth_headphone.jpg",
@@ -241,6 +256,15 @@
     "description/2_T-Shirt.txt",
     "description/3_Chair.txt",
     "description/4_Mobile.txt",
+    "docs/API_REFERENCE.md",
+    "docs/ARCHITECTURE.md",
+    "docs/CALL_GRAPH.md",
+    "docs/DEPENDENCY_GRAPH.md",
+    "docs/PROJECT_OVERVIEW.md",
+    "docs/PROJECT_STRUCTURE.md",
+    "docs/README.md",
+    "docs/SETUP.md",
+    "docs/TECH_STACK.md",
     "requirement.txt"
   ],
   "extensions": {
@@ -1565,8 +1589,8 @@
       ]
     },
     "functions": {
-      "total": 51,
-      "async_count": 15,
+      "total": 50,
+      "async_count": 14,
       "functions": [
         {
           "path": "alembic/env.py",
@@ -2345,32 +2369,6 @@
           "module": "app.routers",
           "name": "get_product",
           "qualified_name": "app.routers.get_product",
-          "signature": "async def get_product(db: Session = Depends(get_db))",
-          "is_async": true,
-          "return_type": null,
-          "parameters": [
-            {
-              "name": "db",
-              "annotation": "Session",
-              "default": "Depends(get_db)"
-            }
-          ],
-          "decorators": [
-            {
-              "name": "router.get",
-              "args": "\"/getallproducts\"",
-              "raw": "@router.get(\"/getallproducts\")",
-              "lineno": 247
-            }
-          ],
-          "docstring": null,
-          "lineno": 248
-        },
-        {
-          "path": "app/routers.py",
-          "module": "app.routers",
-          "name": "get_product",
-          "qualified_name": "app.routers.get_product",
           "signature": "async def get_product(id: int, db: Session = Depends(get_db))",
           "is_async": true,
           "return_type": null,
@@ -2391,11 +2389,11 @@
               "name": "router.get",
               "args": "\"/getproduct/{id}\"",
               "raw": "@router.get(\"/getproduct/{id}\")",
-              "lineno": 254
+              "lineno": 247
             }
           ],
           "docstring": null,
-          "lineno": 255
+          "lineno": 248
         },
         {
           "path": "app/routers.py",
@@ -2427,11 +2425,11 @@
               "name": "router.delete",
               "args": "\"/deleteproduct/{id}\"",
               "raw": "@router.delete(\"/deleteproduct/{id}\")",
-              "lineno": 282
+              "lineno": 275
             }
           ],
           "docstring": null,
-          "lineno": 283
+          "lineno": 276
         },
         {
           "path": "app/routers.py",
@@ -2463,11 +2461,11 @@
               "name": "router.delete",
               "args": "\"/retrieveproduct/{id}\"",
               "raw": "@router.delete(\"/retrieveproduct/{id}\")",
-              "lineno": 313
+              "lineno": 306
             }
           ],
           "docstring": null,
-          "lineno": 314
+          "lineno": 307
         },
         {
           "path": "app/utils.py",
@@ -3291,7 +3289,7 @@
       "frameworks": [
         "FastAPI"
       ],
-      "endpoint_count": 15,
+      "endpoint_count": 14,
       "routers": [
         {
           "name": "router",
@@ -3393,19 +3391,7 @@
           "module": "app.routers",
           "file": "app/routers.py",
           "is_async": true,
-          "lineno": 282
-        },
-        {
-          "method": "GET",
-          "path": "/getallproducts",
-          "handler": "get_product",
-          "handler_class": null,
-          "router": "router",
-          "framework": "FastAPI",
-          "module": "app.routers",
-          "file": "app/routers.py",
-          "is_async": true,
-          "lineno": 247
+          "lineno": 275
         },
         {
           "method": "GET",
@@ -3417,7 +3403,7 @@
           "module": "app.routers",
           "file": "app/routers.py",
           "is_async": true,
-          "lineno": 254
+          "lineno": 247
         },
         {
           "method": "POST",
@@ -3465,7 +3451,7 @@
           "module": "app.routers",
           "file": "app/routers.py",
           "is_async": true,
-          "lineno": 313
+          "lineno": 306
         },
         {
           "method": "PATCH",
@@ -3494,7 +3480,7 @@
       ]
     },
     "call_graph": {
-      "node_count": 51,
+      "node_count": 50,
       "edge_count": 6,
       "nodes": [
         {
@@ -3785,13 +3771,6 @@
           "class": null
         },
         {
-          "id": "app.routers.get_product",
-          "name": "get_product",
-          "module": "app.routers",
-          "kind": "function",
-          "class": null
-        },
-        {
           "id": "app.routers.delete_product",
           "name": "delete_product",
           "module": "app.routers",
@@ -3886,7 +3865,7 @@
         "app.routers.login",
         "app.routers.make_order"
       ],
-      "unresolved_calls": 65
+      "unresolved_calls": 63
     },
     "dependency_graph": {
       "node_count": 20,

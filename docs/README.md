@@ -1,6 +1,6 @@
 # e-commerce
 
-e-commerce is a Python project comprising 34 files. It uses FastAPI, SQLAlchemy, Starlette and follows a Layered Architecture layout.
+e-commerce is a Python project comprising 44 files. It uses FastAPI, SQLAlchemy, Starlette and follows a Layered Architecture layout.
 
 ## Features
 

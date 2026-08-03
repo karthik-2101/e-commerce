@@ -36,6 +36,17 @@ description/
   2_T-Shirt.txt
   3_Chair.txt
   4_Mobile.txt
+docs/
+  API_REFERENCE.md
+  ARCHITECTURE.md
+  CALL_GRAPH.md
+  DEPENDENCY_GRAPH.md
+  PROJECT_OVERVIEW.md
+  PROJECT_STRUCTURE.md
+  README.md
+  SETUP.md
+  TECH_STACK.md
+  repository_knowledge.json
 images/
   1_bluetooth_headphone.jpg
   2_t-shirt.jpg
@@ -53,6 +64,7 @@ requirement.txt
 - `alembic/`
 - `app/`
 - `description/`
+- `docs/`
 - `images/`
 
 ---

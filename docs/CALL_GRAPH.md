@@ -7,7 +7,7 @@ source models.
 
 ## Summary
 
-- Functions/methods: 51
+- Functions/methods: 50
 - Call relationships: 6
 - Entry points (uncalled): 3
 
