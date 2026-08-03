@@ -244,13 +244,6 @@ async def update_product(
 		db.close()
 	return JSONResponse(status_code=200, content={'message':'Product updated successfully'})
 
-@router.get("/getallproducts")
-async def get_product(
-	db: Session = Depends(get_db)
-):
-	products = db.query(Product).all()
-	return [GetProductSchema.from_orm(product) for product in products]
-
 @router.get("/getproduct/{id}")
 async def get_product(
 	id: int,
